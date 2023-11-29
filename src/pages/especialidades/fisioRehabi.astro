@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import EquipoEsp from '../../components/EquipoEspecial.astro';
+
+import img1 from '@assets/especialidades/fisio.png';
+import img2 from '@assets/especialidades/fisio2.png';
+import img3 from '@assets/especialidades/fisio3.png';
+import img4 from '@assets/especialidades/fisio4.png';
+import img5 from '@assets/especialidades/fisio5.png';
+import img6 from '@assets/especialidades/fisio6.png';
+import img7 from '@assets/especialidades/fisio7.png';
+---
+<Layout title="Pododinamic | Plantillas">
+    <div class="relative z-40 w-full my-4 h-[80%]">
+        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
+
+          <swiper-slide class="relative">
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h6 class="uppercase text-[#8FC751] leading-3">especialidad</h6>
+                <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">fisioterapia</h2>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">y rehabilitación</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-2 text-[#000] text-sm lg:text-base">
+                  <p>Tiene como objetivo recuperar y mejorar la capacidad funcional y calidad de vida de aquellas personas que sufren de discapacidad por una enfermedad o lesión.</p>
+                  <p>Entre los trastornos que con más frecuencia requieren este tipo de tratamiento son lesiones cerebrales, de la médula espinal por accidentes o tumores, fracturas de las extremidades, amputaciones, parálisis cerebral, y otras lesiones de músculos, articulaciones y tendones.</p>
+                </div>
+              </div>
+            </div>
+            
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center  items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full lg:flex justify-center items-center">
+                <img src={img2.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center h-full">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">fisioterapia</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">ortopédica</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3 ">
+                    <p class="text-[#000] text-sm lg:text-base">Programa de fisioterapia diseñado especialmente para los pacientes que sufren de alteraciones posturales tales como pies planos, escoliosis y desviaciones pélvicas. Estas alteraciones pueden o no pueden implicar dolor físico. Para tratarlos, ofrecemos fisioterapia biomecánica, así como la educación del paciente que genera el control físico y la conciencia del movimiento.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img3.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">fisioterapia</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">traumatológica</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3 text-sm lg:text-base text-[#000]">
+                    <p>Esta terapia está diseñada para las personas que han sufrido una lesipon traumática en el aparato locomotor (huesos, músculos, ligamentos y tendones), tales como fracturas y esguinces, así estas lesiones hayan llevado a cirugía o no.</p>
+                    <p>Nuestro principal objetivo es facilitar la regeneración de los tejidos para evitar desequilibrio biomecánico utilizando equipos electro físicos y las técnicas manuales.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img4.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">fisioterapia</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">biomecánica</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3 text-sm lg:text-base text-[#000]">
+                    <p>Desarrollamos un sistema minucioso de evaluación en el cual analizamos en forma integral las características subjetivas y objetivas de cada paciente. Consideramos la historia de la lesión dentro de las características propias de cada individuo y principalmente aprovechamos la evaluación para explicar al paciente todo lo concerniente a su situación, que está pasando en su estructura, como puede ayudarse y sus posibilidades futuras.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img5.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">fisioterapia</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">en disfunciones</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">temporomandibulares</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3 text-sm lg:text-base text-[#000]">
+                    <p>El dolor que se siente en la disfunción de la articulación temporomandibular puede irradiarse a la cara, la cabeza y los dientes como resultado de disfunciones del cóndilo, capsula y desajustes vertebrales de la columna vertebral sub craneal. Por esta razón, consideramos obligatorio el uso de un enfoque integral en coordinación con odontólogos y cirujanos maxilofaciales de esta especialidad.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img6.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">terapia de laser</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">terapeutico dmc</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-2 text-xs lg:text-base text-[#000]">
+                    <p>Cuando los tejidos corporales son irradiados por láseres, las enzimas dentro de las células absorben la energía de la luz láser. La luz visible (roja) e infrarroja se absorbe en las mitocondrias, los cromóforos y la membrana celular. La estimulación de los cromóforos en las membranas mitocondriales estimula la producción de ATP (la principal forma de energía de la célula), aumentando la salud y la energía celular. Cuando se aplica como tratamiento, los láseres reducen el dolor y la inflamación, además de estimular la curación, la regeneración nerviosa, la relajación muscular y la respuesta del sistema inmunitario.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img7.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">fisioterapia</h3>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">en la tercera edad</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3 text-sm lg:text-base text-[#000]">
+                    <p>Por la progresiva pérdida ósea y de masa muscular, en la tercera edad se ve afectado el balance y desplazamiento. Recomendamos evaluación y tratamiento precoz para evitar desacondicionamiento y riesgo de caídas, los resultados son sorprendentes.</p>
+                  </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      
+      <script>
+        import { register } from "swiper/element/bundle";
+        register();
+      </script>
+        <EquipoEsp />
+      <Consulta />
+</Layout>
+<style>
+  swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+  swiper-container::part(bullet-active) {
+  background-color: #0197BF;
+  width: 16px;
+  height: 16px;
+}
+swiper-container::part(bullet) {
+  background-color: #0197BF !important;;
+  width: 16px;
+  height: 16px;
+}
+</style>

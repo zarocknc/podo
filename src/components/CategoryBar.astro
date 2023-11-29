@@ -1,0 +1,72 @@
+---
+import pBiodinamicas from "@assets/subCategorias/pBiodinamic.png";
+import aMarcha from "@assets/subCategorias/aMarcha.png";
+import pComputarizada from "@assets/subCategorias/pComput.png";
+
+import plantillaICO from "@assets/subCategorias/plantillaPB.png";
+import lupaICO from "@assets/subCategorias/lupaAM.png";
+import piesICO from "@assets/subCategorias/piesPC.png";
+
+import bgPB from "@assets/subCategorias/bgPB.svg";
+---
+
+
+
+<section class="w-full lg:my-3  flex items-center justify-center my-2 text-[#fff]">
+    <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
+        <h4>Plantillas</h4>
+        <h4 class="font-bold">Biodinámicas</h4>
+        <img src={plantillaICO.src} alt="" class="w-7 lg:w-auto">
+    </a>
+    <div class="btn-AM drop-shadow-lg">
+        <button class="flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl">
+            <img src={lupaICO.src} alt="" class="w-7 lg:w-auto">
+            <h4>Análisis</h4>
+            <h4 class="font-bold">de la marcha</h4>
+        </button>
+    </div>
+    <div class="btn-PC drop-shadow-lg">
+        <button class="flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl">
+            <h4>Pedigrafía</h4>
+            <h4 class="font-bold">Computarizada</h4>
+            <img src={piesICO.src} alt="" class="w-7 lg:w-auto">
+        </button>
+    </div>
+</section>
+<style>
+    .btn-PB{
+        background-image: url(../assets/subCategorias/bgPB.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 14rem;
+        width: 14rem;
+    }
+    .btn-AM{
+        background-image: url(../assets/subCategorias/bgAM.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 14rem;
+        width: 14rem;
+    }
+    .btn-PC{
+        background-image: url(../assets/subCategorias/bgPC.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 14rem;
+        width: 14rem;
+    }
+    @media (max-width: 1023px){
+        .btn-PB{
+        height: 8rem;
+        width: 8rem;
+    }
+    .btn-AM{
+        height: 8rem;
+        width: 8rem;
+    }
+    .btn-PC{
+        height: 8rem;
+        width: 8rem;
+    }
+    }
+</style>

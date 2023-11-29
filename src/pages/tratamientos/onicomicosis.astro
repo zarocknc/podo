@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import EquipoEsp from '../../components/EquipoEspecial.astro';
+
+import img1 from '@assets/tratamientos/onicomicosis.png';
+import img2 from '@assets/tratamientos/onicomicosis2.png';
+---
+<Layout title="Pododinamic | Plantillas">
+    <div class="relative z-40 w-full my-4 h-[80%]">
+        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
+          <swiper-slide class="relative">
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h6 class="uppercase text-[#8FC751] leading-3">tratamiento</h6>
+                <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">onicomicosis</h2>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">hongos en las uñas</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3">
+                  <p class="text-[#000] text-sm lg:text-base">El contagio de esta patología puede deberse a diferentes factores y es mucho más frecuente en la población anciana, dibéticos o inmunodeprimidos y en personas que frecuentan piscinas, vestuarios, gimnasios, así como en profesiones que requieren el uso de zapatos cerrados, sobre todo, en ambientes calurosos y húmedos.</p>
+                </div>
+              </div>
+            </div>
+            
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img2.src} alt="" class="h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
+                <div class="w-[90%] lg:w-[75%] flex flex-col justify-center text-left p-2">
+                  <p class="text-[#000] text-sm lg:text-base">Tratamiento LASER DMC</p>
+                  <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
+                    <li>El láser terapéutico es de gran importancia en el tratamiento de patologías que afectan a los pies. Su acción terapéutica ayuda en el difícil proceso de cicatrización de úlceras e infecciones, sin romper la dermis, además de aliviar el dolor, puede utilizar el láser en diversas inflamaciones, en el pie diabético, en las fisuras del talón o en kas uñas encarnadas, y hongos en las uñas.</li>
+                    <li>Su aplicación no es sentida por el paciente, ya que su potencia es baja, no calienta, no quema, no duele, no provoca picor ni provoca molestia alguna. Además, elimina el uso de medicamentos y brinda un tratamiento mucho más efectivo.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      
+      <script>
+        import { register } from "swiper/element/bundle";
+        register();
+      </script>
+        <EquipoEsp />
+      <Consulta />
+</Layout>
+<style>
+  swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+  swiper-container::part(bullet-active) {
+  background-color: #0197BF;
+  width: 16px;
+  height: 16px;
+}
+swiper-container::part(bullet) {
+  background-color: #0197BF !important;;
+  width: 16px;
+  height: 16px;
+}
+</style>

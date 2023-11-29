@@ -1,0 +1,44 @@
+---
+import videoFondo from "../videos/PAGINA WEB PODODINAMIC .mp4";
+---
+<section id="contenedor-video-padre">
+    <div id="contenedor-video">
+        <video id="background-video" autoplay loop muted >
+            <source src={videoFondo} type="video/mp4">
+        </video>
+        <div class="contenido-texto z-20 absolute">
+            <h4 class="text-xl">Especialistas en podología y estudios biomecánicos</h4>
+            <h2 class="text-5xl font-bold">PISA BIEN, VIVE MEJOR</h2>
+        </div>
+    </div>
+</section>
+
+<style>
+    #contenedor-video-padre{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+    #contenedor-video {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 10;
+    }
+
+</style>

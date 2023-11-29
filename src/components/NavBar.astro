@@ -1,0 +1,203 @@
+---
+import whatsappI from "@assets/header/iconos/whatsappICO.svg";
+import facebookICO from "@assets/header/iconos/facebookICO.svg";
+import instagramICO from "@assets/header/iconos/instagramICO.svg";
+import menuICO from "../assets/header/iconos/hamburgerICO.svg";
+import cerrarICO from "@assets/header/iconos/x-12.svg";
+import { Image } from "astro:assets";
+import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
+---
+<!----contenedor padre del header y navbar -->
+<header class="scroll-nav relative">
+    <section class="flex  lg:justify-between items-center gap-2 bg-[#00bca7] w-full py-1 px-6">
+        <div class="flex justify-center w-full text-[#fff] gap-2 items-center lg:text-base text-xs">
+            <h3>Central de citas :</h3>
+            <div class="flex lg:flex-row lg:gap-2">
+                <a href="https://indri.pe/" class="lg:block hidden">
+                    <img src={whatsappI.src} alt="">
+                </a>
+                <a href="tel:+51999888777">999 888 777</a>
+                <span class="lg:block hidden">/</span>
+                <a href="tel:+51999666555">999 666 555</a>
+            </div>
+    
+        </div>
+        <div class="hidden lg:flex justify-end gap-3">
+            <a href="https://indri.pe/">
+                <img src={facebookICO.src} alt="">
+            </a>
+            <a href="https://indri.pe/">
+                <img src={instagramICO.src} alt="">
+            </a>
+    
+        </div>
+    </section>
+    <section class="flex align-middle justify-center items-center w-full py-2 px-4">
+    
+        <!----contenedor padre del logo -->
+        <div class="flex w-full justify-center lg:gap-28 gap-16">
+            <a href="/" class="w-[80%]"><Image src={logo1} alt="A description of my image." class="lg:h-16 lg:w-auto "  /></a>
+            <button id="menu-button" class="lg:hidden block">
+                <img src={menuICO.src} alt="menu">
+            </button>
+        </div>
+        <!---MENU DE NAVEGACION -->
+        <nav id="menu" class="hidden h-screen z-[999] top-0 bottom-0 right-0 bg-[#30c281] w-3/4 text-right lg:bg-transparent lg:right-auto lg:bottom-auto lg:top-auto lg:h-auto lg:w-auto lg:flex lg:items-center lg:gap-4">
+
+                <div class="lg:hidden flex justify-end w-full p-4">
+                    <button id="cerrar-menu">
+                        <img src={cerrarICO.src} alt="cerrarMenu">
+                    </button>
+                </div>
+
+                <div class="w-full justify-center flex lg:hidden ">
+                    <Image src={logo1} alt="A description of my image." class="lg:hidden w-[80%] my-2  "  />
+                </div>
+
+                <div class="flex flex-col lg:flex lg:flex-row lg:p-0 p-4 items-end relative">
+                    <ul class="lg:flex lg:gap-4">
+                        <li class="relative group">
+                            <button id="btn-plantillas" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">plantillas</button>
+                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute left-0 top-full  bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                            <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
+                            <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/plantillas/estudioBP" class="uppercase">e. biomecánico de la pisada</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <button id="btn-tratamientos" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">tratamientos</button>
+                            <ul id="opt-tratamientos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/uñaEncarnada" class="uppercase">uña encarnada</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
+                            </ul>
+                          </li>
+                        <li class="relative">
+                            <button id="btn-especialidades" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">especialidades</button>
+                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/vidadiaria" class="uppercase">p. para la vida diaria</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/pInfantil" class="uppercase">p. infantil</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/deportiva" class="uppercase">p. deportiva</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/personasMayores" class="uppercase">p. personas mayores</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <button id="btn-productos" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">productos</button>
+                            <ul id="opt-productos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
+                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-------BOTONES------- -->
+                <div>
+                    <ul class="flex lg:gap-2 lg:flex-row lg:p-0 p-4 text-[#fff] items-end flex-col gap-3">
+                        <li>
+                            <a href="/cursos"
+                                ><button class="uppercase bg-[#00bbbd] py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
+                            >
+                        </li>
+                        <li>
+                            <a href="/contacto"
+                                ><button class="uppercase bg-[#70c946] py-1 px-5 rounded-xl hover:brightness-75">contacto</button></a
+                            >
+                        </li>
+                        <li>
+                            <a href="/nosotros"
+                                ><button class="uppercase bg-[#0098c3] py-1 px-5 rounded-xl hover:brightness-75">nosotros</button></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </section>
+    <script is:inline>
+        /*mostrar menu*/
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("menu");
+        const cerrarMenu = document.getElementById("cerrar-menu")
+      
+        menuButton?.addEventListener("click", () => {
+            mobileMenu?.classList.remove("hidden");
+            menuButton?.classList.add("hidden");
+            mobileMenu?.classList.add("block", "absolute");
+            mobileMenu?.classList.add("delay-700")
+        });
+        cerrarMenu?.addEventListener("click", () => {
+            mobileMenu?.classList.add("hidden");
+            menuButton?.classList.remove("hidden");
+          }
+        );
+        
+        
+        
+
+
+    
+        /*------------------mostrar opciones------------------*/
+
+        /*-------------opcion PLANTILLA-------------*/
+        const buttonP = document.getElementById("btn-plantillas");
+        const optionP = document.getElementById("opt-plantillas");
+        
+        buttonP?.addEventListener("click", () => {
+            if (optionP?.classList.contains("hidden")) {
+                optionP?.classList.remove("hidden");
+                optionT?.classList.add("hidden");
+                optionE?.classList.add("hidden");
+                optionPro?.classList.add("hidden"); // Abre el menú
+            } else {
+                optionP?.classList.add("hidden"); // Cierra el menú
+            } 
+        });/*-----------------------------------*/
+
+        /*-------------opcion TRATAMIENTOS-------------*/
+        const buttonT = document.getElementById("btn-tratamientos");
+        const optionT = document.getElementById("opt-tratamientos");
+        
+        buttonT?.addEventListener("click", () => {
+            if (optionT?.classList.contains("hidden")) {
+                optionT?.classList.remove("hidden");
+                optionP?.classList.add("hidden");
+                optionE?.classList.add("hidden");
+                optionPro?.classList.add("hidden"); // Abre el menú
+            } else {
+                optionT?.classList.add("hidden"); // Cierra el menú
+            } 
+        });/*-----------------------------------*/
+        /*-------------opcion ESPECIALIDADES-------------*/
+        const buttonE = document.getElementById("btn-especialidades");
+        const optionE = document.getElementById("opt-especialidades");
+        
+        buttonE?.addEventListener("click", () => {
+            if (optionE?.classList.contains("hidden")) {
+                optionE?.classList.remove("hidden");
+                optionT?.classList.add("hidden");
+                optionP?.classList.add("hidden");
+                optionPro?.classList.add("hidden"); // Abre el menú
+            } else {
+                optionE?.classList.add("hidden"); // Cierra el menú
+            } 
+        });/*-----------------------------------*/
+        /*-------------opcion PRODUCTOS-------------*/
+        const buttonPro = document.getElementById("btn-productos");
+        const optionPro = document.getElementById("opt-productos");
+        
+        buttonPro?.addEventListener("click", () => {
+            if (optionPro?.classList.contains("hidden")) {
+                optionPro?.classList.remove("hidden");
+                optionP?.classList.add("hidden");
+                optionE?.classList.add("hidden");
+                optionT?.classList.add("hidden"); // Abre el menú
+            } else {
+                optionPro?.classList.add("hidden"); // Cierra el menú
+            } 
+        });/*-----------------------------------*/
+      </script>
+</header>
+<style>
+	.scroll-nav{
+		scroll-snap-align: center;
+	}
+</style>

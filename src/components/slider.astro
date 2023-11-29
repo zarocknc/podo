@@ -1,0 +1,44 @@
+---
+import img1 from '../assets/sliderHome/slider1.png';
+---
+
+<div class="relative z-40 w-full my-4 h-[80%]">
+    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" pagination="true" class="estiobp w-[95%] h-[90%] rounded-lg z-20">
+      <swiper-slide class="relative">
+        <div class="relative flex justify-center gap-2 items-center w-full h-full">
+          <div class="h-full w-screen">
+            <img src={img1.src} alt="" class="w-full">
+          </div>
+          <div class="absolute text-center w-[40%] flex flex-col justify-center items-center right-32">
+            <h2 class="uppercase text-[#8FC751] lg:text-5xl">.</h2>
+            <h2 class="uppercase text-[#1579BD] lg:text-6xl font-bold">.</h2>
+          </div>
+        </div>
+        
+      </swiper-slide>
+      <!---
+    <swiper-slide>
+        <div class="flex justify-center gap-2 items-center w-full h-full">
+          <div class="h-full w-[45%] flex justify-center items-center">
+            
+          </div>
+          <div class="text-center w-[45%] flex flex-col justify-center items-center">
+            <div class="w-[90%] flex flex-col justify-center text-left">
+                <span class="font-bold text-[#000]">"Cuándo llevar a un niño al podólogo?</span>
+              <ul class="mt-2">
+                <li>Lo importante es detectar cualquier problema a tiempo y que los padres acudan lo antes posible al podólogo.</li>
+                <li>La función de la podología pediátrica es detectar y corregir posibles marchas erráticas y posturas inadecuadas mediante el uso de plantillas infantiles personalizadas y calzado biomecánico que, a largo plazo, puedan derivar en lesiones en los pies, cadera, espalda, rodillas u otras partes del cuerpo. Por tanto, ¿cuándo deberías llevar a tu hijo al podólogo infantil? Ante síntomas como estos:</li>
+                <li>Has observado que tiene los pies planos, las piernas en cruz o en paréntesis; que mete las puntas de los pies hacia dentro, camina de puntillas; se cae con frecuencia o sufre lesiones o esguinces con más frecuencia de lo habitual; se queja de dolor en los pies, tobillos, rodilla, caderas o espalda; desgasta el calzado de forma irregular, etc.</li>
+                <li>La mayoría de estas patologías se pueden corregir con el uso de plantillas infantiles personalizadas y calzado biomecánico.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </swiper-slide> -->
+    </swiper-container>
+  </div>
+  
+  <script>
+    import { register } from "swiper/element/bundle";
+    register();
+  </script>

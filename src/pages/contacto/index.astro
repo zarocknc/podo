@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Pododinamic | Contacto"  >
+	<main class="w-full my-12">
+        <div class="flex flex-col items-center justify-center gap-4">
+            <div class="font-bold text-xl">Contactanos</div>
+            <div>
+                <form action="/contacto/formulario.php" method="post" class="text-left flex flex-col gap-4">
+                    <div class="flex lg:flex-row flex-col lg:gap-2 gap-4">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="p-1 border-2 rounded" required>
+
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="p-1 border-2 rounded" required>
+                    </div>
+                    
+                    <div class="flex lg:flex-row flex-col lg:gap-2 gap-4">
+                        <input type="email" id="correo" name="correo" placeholder="Correo" class="p-1 border-2 rounded" required>
+
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="p-1 border-2 rounded" required>
+                    </div>
+                    
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="p-1 border-2 rounded resize-none" required></textarea>
+                    
+                    <div class="flex justify-center items-center w-full">
+                        <input type="submit" class="border-2 rounded lg:w-1/5 w-2/5" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+	</main>
+</Layout>

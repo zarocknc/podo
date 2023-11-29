@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import EquipoEsp from '../../components/EquipoEspecial.astro';
+
+import img1 from '@assets/especialidades/infantil.png';
+import img2 from '@assets/especialidades/infantil2.png';
+---
+<Layout title="Pododinamic | Plantillas">
+    <div class="relative z-40 w-full my-4 h-[80%]">
+        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
+          <swiper-slide class="relative">
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h6 class="uppercase text-[#8FC751] leading-3">especialidad</h6>
+                <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">podología</h2>
+                <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">infantil</h3>
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3">
+                  <p class="text-[#000] text-sm lg:text-base">La podología infantil trata las alteraciones y defectos estructurales o funcionales de los pies de los niños. Como los pies infantiles cuentan con una gran cantidad de cartílago que se irá osificando a medida que los niños vayan creciendo, la infancia resulta la mejor época para revisar y realizar correcciones en los pies y así poder evitar problemas y complicaciones en un futuro.</p>
+                </div>
+              </div>
+            </div>
+            
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center  items-center w-full h-full">
+              <div class=" hidden h-full lg:w-[45%] w-full lg:flex justify-center items-center">
+                <img src={img2.src} alt="" class="h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center h-full">
+                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center text-left p-2">
+                    <span class="font-bold text-[#000] text-sm lg:text-base">"Cuándo llevar a un niño al podólogo?</span>
+                  <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
+                    <li>Lo importante es detectar cualquier problema a tiempo y que los padres acudan lo antes posible al podólogo.</li>
+                    <li>La función de la podología pediátrica es detectar y corregir posibles marchas erráticas y posturas inadecuadas mediante el uso de plantillas infantiles personalizadas y calzado biomecánico que, a largo plazo, puedan derivar en lesiones en los pies, cadera, espalda, rodillas u otras partes del cuerpo. Por tanto, ¿cuándo deberías llevar a tu hijo al podólogo infantil? Ante síntomas como estos:</li>
+                    <li>Has observado que tiene los pies planos, las piernas en cruz o en paréntesis; que mete las puntas de los pies hacia dentro, camina de puntillas; se cae con frecuencia o sufre lesiones o esguinces con más frecuencia de lo habitual; se queja de dolor en los pies, tobillos, rodilla, caderas o espalda; desgasta el calzado de forma irregular, etc.</li>
+                    <li>La mayoría de estas patologías se pueden corregir con el uso de plantillas infantiles personalizadas y calzado biomecánico.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      
+      <script>
+        import { register } from "swiper/element/bundle";
+        register();
+      </script>
+        <EquipoEsp />
+      <Consulta />
+</Layout>
+<style>
+  swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+  swiper-container::part(bullet-active) {
+  background-color: #0197BF;
+  width: 16px;
+  height: 16px;
+}
+swiper-container::part(bullet) {
+  background-color: #0197BF !important;;
+  width: 16px;
+  height: 16px;
+}
+</style>

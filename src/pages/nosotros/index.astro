@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import portada from '../../assets/nosotros/portada.png';
+import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
+import zapatillas from '../../assets/productos/zapatos/zapatillas.png';
+import zapatillas2 from '../../assets/productos/zapatos/zapatillas2.png';
+import sandalias2 from '../../assets/productos/zapatos/sandalias2.png';
+---
+
+<Layout title="Pododinamic | Plantillas">
+
+        <section class="h-screen my-2">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
+				<div class="lg:w-[40%] w-[80%] ">
+					<img src={portada.src} alt="" class="w-full lg:h-[60%]">
+				</div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
+					<h6 class="uppercase text-[#8FC751]">nosotros</h6>
+					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">pododinamic</h2>
+					<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">historia</h3>
+					<div class="flex justify-center items-center w-full mt-2">
+						<p class="lg:w-[60%]">Somos una empresa conformado por un equipo humano con conocimientos podológicos, biomecánicos, grandes ideas, ilusión, humildad, perseverancia y superación.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="h-screen my-2">
+			<div class="flex flex-row">
+				<div>
+					<p>
+						Comenzamos nuestra actividad ortopédica con la confección de plantillas ortopédicas
+					</p>
+					<h2>1995</h2>
+				</div>
+				<div>
+					<p>
+
+					</p>
+					<h2>2019</h2>
+				</div>
+			</div>
+		</section>
+
+    <Consulta />
+</Layout>

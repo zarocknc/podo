@@ -1,0 +1,218 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import portada from '../../assets/productos/zapatos/portada.png';
+import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
+---
+
+<Layout title="Pododinamic | Plantillas">
+
+        <section class="py-12 lg:py-4">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full  lg:justify-evenly items-center px-4 gap-12 lg:gap-0">
+				<div class="lg:w-[40%] w-[80%] ">
+					<img src={portada.src} alt="" class="w-full">
+				</div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
+					<h6 class="uppercase text-[#8FC751]">Te acompañamos en cada paso</h6>
+					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">zapatos</h2>
+					<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">para niños</h3>
+					<div class="flex justify-center items-center w-full mt-2">
+						<p class="lg:w-[55%]">Los zapatos de los niños son una de las preocupaciones de los padres, dado que un buen calzado en la época de pre-andante y primeros pasos es vital para su crecimiento y desarrollo sano y feliz.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-------------------SLIDER 1------------------------- -->
+		<section class="scroll-nav h-screen">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full lg:justify-evenly justify-center items-center px-4 gap-8 lg:gap-0">
+
+				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                      <swiper-slide class="relative">
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center items-center w-full h-full">
+                          <div class="lg:w-full w-full flex justify-center items-center">
+                            <img src={sandalias1.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                        
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={portada.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                    </swiper-container>
+                  </div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%] items-center">
+					<h6 class="uppercase text-[#8FC751] lg:text-4xl text-xl">biomecanics</h6>
+					<h2 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">sandalias</h2>
+					<h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">222145-a</h3>
+                    <h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">azul marino</h3>
+					<div class="flex justify-center items-center w-full lg:mt-4 lg:mb-24 lg:w-[40%]">
+                        <ul class="text-center">
+                            <li>Plantilla: cuero</li>
+                            <li>Interior: cuero</li>
+                            <li>Parte superior: Cuero natural - Piel de flor</li>
+                            <li>Suela: material de alta calidad</li>
+                            <li>Contiene partes no textiles de origen animal: Sí</li>
+                        </ul>
+					</div>
+                    <a href="" class="bg-[#55BABB] text-[#fff] py-2 rounded-xl w-[30%]">Informes</a>
+				</div>
+			</div>
+		</section>
+
+        <!-------------------SLIDER 2------------------------- -->
+        <section class="scroll-nav h-screen">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full lg:justify-evenly justify-center items-center px-4 gap-2 lg:gap-0">
+
+				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                      <swiper-slide class="relative">
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full w-full flex justify-center items-center">
+                            <img src={sandalias1.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                        
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={portada.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                    </swiper-container>
+                  </div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%] items-center">
+					<h6 class="uppercase text-[#8FC751] lg:text-4xl text-xl">biomecanics</h6>
+					<h2 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">zapatillas</h2>
+					<h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">222161-a</h3>
+                    <h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">ocean</h3>
+					<div class="flex justify-center items-center w-full lg:mt-4 lg:mb-24 lg:w-[50%]">
+                        <ul class="text-center">
+                            <li>Plantilla: cuero</li>
+                            <li>Interior: cuero, tejido</li>
+                            <li>Parte superior: Sintético/-Sintético de calidad, Textil/-Textil</li>
+                            <li>Suela: material de alta calidad</li>
+                            <li>Contiene partes no textiles de origen animal: Sí</li>
+                        </ul>
+					</div>
+                    <a href="" class="bg-[#55BABB] text-[#fff] py-2 rounded-xl w-[30%]">Informes</a>
+				</div>
+			</div>
+		</section>
+
+        <!-------------------SLIDER 3------------------------- -->
+		<section class="scroll-nav h-screen">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
+
+				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                      <swiper-slide class="relative">
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full w-full flex justify-center items-center">
+                            <img src={sandalias1.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                        
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={portada.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                    </swiper-container>
+                  </div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%] items-center">
+					<h6 class="uppercase text-[#8FC751] lg:text-4xl text-xl">biomecanics</h6>
+					<h2 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">zapatillas</h2>
+					<h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">222127-a</h3>
+                    <h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">blanco rosa</h3>
+					<div class="flex justify-center items-center w-full lg:mt-4 lg:mb-24 lg:w-[50%]">
+                        <ul class="text-center">
+                            <li>Plantilla: cuero</li>
+                            <li>Interior: cuero, tejido</li>
+                            <li>Parte superior: Sintético/-Sintético de calidad, Textil/-Textil</li>
+                            <li>Suela: material de alta calidad</li>
+                            <li>Contiene partes no textiles de origen animal: Sí</li>
+                        </ul>
+					</div>
+                    <a href="" class="bg-[#55BABB] text-[#fff] py-2 rounded-xl w-[30%]">Informes</a>
+				</div>
+			</div>
+		</section>
+
+		<!-------------------SLIDER 4------------------------- -->
+		<section class="scroll-nav h-screen">
+			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
+
+				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                      <swiper-slide class="relative">
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full w-full flex justify-center items-center">
+                            <img src={sandalias1.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                        
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={portada.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                    </swiper-container>
+                  </div>
+				<div class="flex flex-col text-center w-[80%] lg:w-[40%] items-center">
+					<h6 class="uppercase text-[#8FC751] lg:text-4xl text-xl">biomecanics</h6>
+					<h2 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">sandalias</h2>
+					<h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">222117-a</h3>
+                    <h3 class="uppercase text-[#0197BF] lg:text-4xl text-xl font-bold">cipria</h3>
+					<div class="flex justify-center items-center w-full lg:mt-4 lg:mb-24 lg:w-[50%]">
+                        <ul class="text-center">
+                            <li>Plantilla: cuero</li>
+                            <li>Interior: cuero</li>
+                            <li>Parte superior: Cuero natural - Ante, Cuero natural/-Lustrado</li>
+                            <li>Suela: material de alta calidad</li>
+                            <li>Contiene partes no textiles de origen animal: Sí</li>
+                        </ul>
+					</div>
+                    <a href="" class="bg-[#55BABB] text-[#fff] py-2 rounded-xl w-[30%]">Informes</a>
+				</div>
+			</div>
+		</section>
+
+        <script>
+            import { register } from "swiper/element/bundle";
+            register();
+          </script>
+    <Consulta />
+</Layout>
+<style>
+	html{
+		scroll-snap-type: y mandatory;
+	}
+	.scroll-item{
+		scroll-snap-align: center;
+	}
+	.scroll-nav{
+		scroll-snap-align: center;
+	}
+
+    swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+</style>
+<!--comentario cualquiera -->

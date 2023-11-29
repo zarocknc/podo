@@ -1,0 +1,83 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Consulta from '../../components/Consulta.astro';
+import EquipoEsp from '../../components/EquipoEspecial.astro';
+
+import img1 from '@assets/tratamientos/quiropodia.png';
+import img2 from '@assets/tratamientos/quiropodia2.png';
+
+import sliderL1 from "@assets/slider/SLIDER-1920-X-500-PUBLI6.png";
+import sliderL2 from "@assets/slider/SLIDER-1920-X-500-PUBLI5.png";
+import sliderL3 from "@assets/slider/SLIDER-1920-X-500-PUBLI4.png";
+
+import sliderM1 from "@assets/slider/SLIDER-700-X-370-PROMOCIÓN.png";
+import sliderM2 from "@assets/slider/SLIDER-700-X-370-PUBLI1.png";
+import sliderM3 from "@assets/slider/SLIDER-700-X-370-PUBLI2.png";
+---
+<Layout title="Pododinamic | Plantillas">
+    <div class="relative z-40 w-full my-4 h-[80%]">
+        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
+          <swiper-slide class="relative">
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+                <h6 class="uppercase text-[#8FC751]">tratamiento</h6>
+                <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">quiropodia</h2>
+                <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">profilaxis del pie</h3>
+                <div class="w-[90%] lg:w-[75%] flex flex-col justify-center mt-3">
+                  <p class="text-[#000]">Según el ilustre Colegio de Podólogos de Castilla la Mancha: "Una quiropodia es un tratamiento podológico que se realiza para eliminar durezas, callosidades y alteraciones en las uñas de los pies. Su objetivo principal es evitar que estas pequeñas lesiones aumenten su gravedad con el tiempo".</p>
+                </div>
+              </div>
+            </div>
+            
+          </swiper-slide>
+          <swiper-slide>
+            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+                <img src={img2.src} alt="" class="h-[90%] w-full">
+              </div>
+              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
+                <div class="w-[90%] lg:w-[75%] flex flex-col justify-center text-left p-2">
+                  <p class="text-[#000] text-sm lg:text-base">La relación de actuaciones realizadas en una quiropodia consta de las siguientes partes:</p>
+                  <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
+                    <li>Deslaminación de hiperqueratosis: Eliminación de las durezas generadas en el pie.</li>
+                    <li>Corte y fresado de uñas terapéutico: Tratamiento para las diferentes afecciones de la uña.</li>
+                    <li>Tratamiento de helomas (callos): Eliminación del tejido inerte del pie.</li>
+                    <li>Fresado de talones: Eliminación de las durezas de los talones de los pies.</li>
+                    <li>Hidratación y masaje: Tratamiento de hidratación profunda para la mejora de la piel de los pies.</li>
+                    <li>El acto de la quiropodia se debe repetir con una frecuencia habitual de entre 4-8 semanas, siendo necesaria la evaluación por parte del podólogo de ambos pies del paciente antes de comenzar la quiropodia.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      
+      <script>
+        import { register } from "swiper/element/bundle";
+        register();
+      </script>
+        <EquipoEsp />
+      <Consulta />
+</Layout>
+<style>
+  swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+  swiper-container::part(bullet-active) {
+  background-color: #0197BF;
+  width: 16px;
+  height: 16px;
+}
+swiper-container::part(bullet) {
+  background-color: #0197BF !important;;
+  width: 16px;
+  height: 16px;
+}
+</style>

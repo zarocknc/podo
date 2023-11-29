@@ -1,0 +1,58 @@
+---
+interface Props {
+	title: string;
+
+}
+
+import '@fontsource/inter';
+import Navbar from '../components/NavBar.astro';
+import FooterR from '../components/FooterR';
+import Whatsapp from '@components/BtnWhatsapp.astro';
+
+// Supports weights 200-900
+import '@fontsource-variable/source-sans-3';
+
+const { title } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Pododinamic contrate nuestros servicios y productos" />
+		<meta name="keywords" content="podologia, plantillas personalizadas,etc">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="h-screen w-full">
+		<Navbar/>
+
+		<slot/>
+		<Whatsapp />
+		<FooterR client:visible/>
+	</body>
+</html>
+<style is:global>
+	:root {
+	}
+	html {
+		font-family: 'Source Sans 3 Variable', sans-serif;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	.centrar {
+		scroll-snap-align: center;
+	}
+</style>
