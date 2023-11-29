@@ -2,16 +2,17 @@
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
 import portada from '../../assets/nosotros/portada.png';
-import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
-import zapatillas from '../../assets/productos/zapatos/zapatillas.png';
-import zapatillas2 from '../../assets/productos/zapatos/zapatillas2.png';
-import sandalias2 from '../../assets/productos/zapatos/sandalias2.png';
+import fecha1 from '../../assets/nosotros/fecha1.png';
+import fecha2 from '../../assets/nosotros/fecha2.png';
+import fecha3 from '../../assets/nosotros/fecha3.png';
+import fecha4 from '../../assets/nosotros/fecha4.png';
+import equipo from "@assets/subFooter/equipoEsp.png";
 ---
 
 <Layout title="Pododinamic | Plantillas">
 
-        <section class="h-screen my-2">
-			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
+        <section class="lg:h-screen my-2 flex justify-center items-center h-full">
+			<div class="flex lg:flex-row justify-evenly flex-col-reverse w-full lg:h-full items-center px-4 gap-2 lg:gap-0">
 				<div class="lg:w-[40%] w-[80%] ">
 					<img src={portada.src} alt="" class="w-full lg:h-[60%]">
 				</div>
@@ -20,25 +21,81 @@ import sandalias2 from '../../assets/productos/zapatos/sandalias2.png';
 					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">pododinamic</h2>
 					<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">historia</h3>
 					<div class="flex justify-center items-center w-full mt-2">
-						<p class="lg:w-[60%]">Somos una empresa conformado por un equipo humano con conocimientos podológicos, biomecánicos, grandes ideas, ilusión, humildad, perseverancia y superación.</p>
+						<p class="lg:w-[60%] w-full">Somos una empresa conformado por un equipo humano con conocimientos podológicos, biomecánicos, grandes ideas, ilusión, humildad, perseverancia y superación.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="h-screen my-2">
-			<div class="flex flex-row">
-				<div>
-					<p>
-						Comenzamos nuestra actividad ortopédica con la confección de plantillas ortopédicas
-					</p>
-					<h2>1995</h2>
-				</div>
-				<div>
-					<p>
+		<section class="scroll-item  lg:h-screen my-2 w-full flex flex-col justify-center">
+			<div class="flex lg:flex-row flex-col w-full items-center justify-evenly">
 
-					</p>
-					<h2>2019</h2>
+				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-evenly">
+					<div class="flex flex-col text-center items-center w-[45%] gap-4">
+						<p class="w-full">
+							Comenzamos nuestra actividad ortopédica con la confección de plantillas ortopédicas genéricas de serie, siendo distribuidores a nivel nacional e internacional, con la marca ARCH-CONFORT, paralelamente brindabamos servicios a empresas prestigiosas como ORTOPEDIA WONG Y otros.
+						</p>
+						<h2 class="text-[#8AD2D2] text-6xl font-bold">1995</h2>
+					</div>
+					<div class="flex justify-center items-end w-[45%]">
+						<img src={fecha1.src} alt="" class="h-[60%] w-[80%]">
+					</div>
+				</div>
+
+				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-evenly">
+					<div class="flex flex-col text-center items-center w-[45%] gap-4">
+						<p class="w-full">
+							Recibimos preparación y capacitación en biomecánica de la pisada y técnias ortopédicas de altísimo nivel en madrid españa en soportes plantares ergonómico cuyo principio es el contacto total, desde entonces damos a conocer este innovador producto, eficaz y funcional para la marcha humana, de gran calidad y confort.
+						</p>
+						<h2 class="text-[#0197BF] text-6xl font-bold">2019</h2>
+					</div>
+					<div class="flex justify-center items-end w-[45%]">
+						<img src={fecha2.src} alt="" class="h-[60%] w-[80%]">
+					</div>
+				</div>
+			</div>
+
+			<hr class="my-3 h-1 bg-[#1579BD] lg:block hidden">
+
+			<div class="flex lg:flex-row flex-col w-full items-center justify-evenly">
+				<div class="flex lg:flex-row-reverse flex-col w-[45%] justify-evenly">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] gap-4">
+						<p class="w-full">
+							Nuestro equipo humano recibe capacitación especializada en podología y ortopodología en una prestigiosa institución de salud "CARRION, EDUCACIÓN SUPERIOR" y la universidad UMDSM. Desde entonces seguimos capacitandonos en seminarios, talleres nacionales e internacionales de europa.
+						</p>
+						<h2 class="text-[#55BABB] text-6xl font-bold">2016</h2>
+					</div>
+					<div class="flex justify-center items-start w-[45%]">
+						<img src={fecha3.src} alt="" class="h-[60%] w-[80%]">
+					</div>
+				</div>
+				<div class="flex lg:flex-row-reverse flex-col w-[45%] justify-evenly h-full">
+					<div class="flex flex-col text-center items-center lg:w-[45%] gap-4">
+						<h2 class="text-[#1579BD] text-6xl font-bold">2021</h2>
+						<p class="w-full">
+							Pododinamic dió un salto a la automatización con equipo moderno y herramientas profesionales que facilitaria la producción de soportes plantares (plantillas ortopédicas) y biomecánica de la marcha humana.
+						</p>
+					</div>
+					<div class="flex justify-center items-start w-[45%]">
+						<img src={fecha4.src} alt="" class="h-[60%] w-[80%]">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-8 px-2 py-4 lg:py-0 w-full">
+				<div class="text-[#fff] flex items-center lg:w-[40%] lg:gap-4 gap-2 w-full">
+					<div class="flex text-center w-full lg:text-7xl text-sm">
+						<h2 class="font-bold">2023</h2>
+					</div>
+					<div class="lg:text-center lg:w-[60%] w-full lg:text-base text-[10px]">
+						<p>Actualmente brindamos servicio integral de podología, biomecánica de la marcha, fisioterapia y rehabilitación en nuestro centro de atención.</p>
+						<p >Estamos agradecidos muy sinceramente a nuestros clientes, proveedores, colaboradores y a nuestros competidores, porque sin todos ellos no hubiéramos podido crecer.</p>
+					</div>
+				</div>
+				<div class="lg:w-[65%]">
+					<img src={equipo.src} alt="">
 				</div>
 			</div>
 		</section>
