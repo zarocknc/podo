@@ -12,61 +12,31 @@ import bgPB from "@assets/subCategorias/bgPB.svg";
 
 
 
-<section class="w-full lg:my-3  flex items-center justify-center my-2 text-[#fff]">
-    <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
-        <h4>Plantillas</h4>
-        <h4 class="font-bold">Biodinámicas</h4>
-        <img src={plantillaICO.src} alt="" class="w-7 lg:w-auto">
-    </a>
-    <div class="btn-AM drop-shadow-lg">
-        <button class="flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl">
-            <img src={lupaICO.src} alt="" class="w-7 lg:w-auto">
-            <h4>Análisis</h4>
-            <h4 class="font-bold">de la marcha</h4>
-        </button>
+<section class="lg:my-3  flex items-center justify-center my-2 text-[#fff]">
+    <div class="ctg-1 bg-[#55BABB] lg:px-20 lg:py-5 px-6 py-2">
+        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
+            <h4 class="uppercase">plantillas</h4>
+            <h4 class="uppercase font-bold">dinámicas</h4>
+        </a>
     </div>
-    <div class="btn-PC drop-shadow-lg">
-        <button class="flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl">
-            <h4>Pedigrafía</h4>
-            <h4 class="font-bold">Computarizada</h4>
-            <img src={piesICO.src} alt="" class="w-7 lg:w-auto">
-        </button>
+    <div class="ctg-2 drop-shadow-lg bg-[#8FC751] lg:px-20 lg:py-5 px-6 py-2">
+        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
+            <h4 class="uppercase">análisis de</h4>
+            <h4 class="uppercase font-bold">la marcha</h4>
+        </a>
+    </div>
+    <div class="ctg-3 drop-shadow-lg bg-[#0197bf] lg:px-20 lg:py-5 px-6 py-2">
+        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
+            <h4 class="uppercase">pedigrafía</h4>
+            <h4 class="uppercase font-bold">computarizada</h4>
+        </a>
     </div>
 </section>
 <style>
-    .btn-PB{
-        background-image: url(../assets/subCategorias/bgPB.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 14rem;
-        width: 14rem;
+    .ctg-1{
+        border-radius: 8rem 0 0 0;
     }
-    .btn-AM{
-        background-image: url(../assets/subCategorias/bgAM.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 14rem;
-        width: 14rem;
-    }
-    .btn-PC{
-        background-image: url(../assets/subCategorias/bgPC.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 14rem;
-        width: 14rem;
-    }
-    @media (max-width: 1023px){
-        .btn-PB{
-        height: 8rem;
-        width: 8rem;
-    }
-    .btn-AM{
-        height: 8rem;
-        width: 8rem;
-    }
-    .btn-PC{
-        height: 8rem;
-        width: 8rem;
-    }
+    .ctg-3{
+        border-radius: 0 8rem 0 0;
     }
 </style>
