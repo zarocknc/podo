@@ -17,31 +17,31 @@ export default function App() {
         {/* [/* FOOTER PARA MOVILES*/}
             <div className="block lg:hidden bg-[#fff] p-4 text-xs">
             <Accordion>
-        <AccordionItem key="1" aria-label="especialidades" title="ESPECIALIDADES">
+        <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
                 <ul className="flex flex-col justify-center">
-                    <li><a href="">Podología para la Vida Diaria</a></li>
-                    <li><a href="">Podología Infantil</a></li>
-                    <li><a href="">Podología Deportiva</a></li>
-                    <li><a href="">Podología Personas Mayores</a></li>
+                    <li><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
+                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
+                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
+                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
                     <li><a href="">Cirugía Podológica</a></li>
                     <li><a href="">Protesis para Amputación</a></li>
-                    <li><a href="">Fisioterapia y rehabilitación</a></li>
+                    <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
                 </ul>
         </AccordionItem>
-        <AccordionItem key="2" aria-label="tratamientos" title="TRATAMIENTOS" >
+        <AccordionItem key="2" aria-label="tratamientos" title="Tratamientos" >
                 <ul >
-                    <li><a href="">Profilaxis del pie</a></li>
-                    <li><a href="">Uña encarnada</a></li>
-                    <li><a href="">Hongos en las uñas</a></li>
-                    <li><a href="">Tratamiento Laser</a></li>
+                    <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
+                    <li><a href="/tratamientos/uñaEncarnada">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
                 </ul>
         </AccordionItem>
-        <AccordionItem key="3" aria-label="plantillas" title="PLANTILLAS">
+        <AccordionItem key="3" aria-label="plantillas" title="Plantillas">
                 <ul>
-                    <li><a href="">Plantillas personalizadas</a></li>
+                    <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
+                    <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
                 </ul>
         </AccordionItem>
-        <AccordionItem key="4" aria-label="nosotros" title="NOSOTROS">
+        <AccordionItem key="4" aria-label="nosotros" title="Nosotros">
                 <ul className="">
                     <li><a href="">hola@pododinamic</a></li>
                 </ul>
@@ -67,29 +67,29 @@ export default function App() {
             <div className="flex justify-center flex-col">
                 <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
                 <ul>
-                    <li><a href="">Podología para la Vida Diaria</a></li>
-                    <li><a href="">Podología Infantil</a></li>
-                    <li><a href="">Podología Deportiva</a></li>
-                    <li><a href="">Podología Personas Mayores</a></li>
+                    <li><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
+                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
+                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
+                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
                     <li><a href="">Cirugía Podológica</a></li>
                     <li><a href="">Protesis para Amputación</a></li>
-                    <li><a href="">Fisioterapia y rehabilitación</a></li>
+                    <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
                 </ul>
             </div>
             <div>
                 <div className="flex justify-center lg:flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 justify-center flex">tratamientos</h3>
                     <ul>
-                        <li><a href="">Profilaxis del pie</a></li>
-                        <li><a href="">Uña encarnada</a></li>
-                        <li><a href="">Hongos en las uñas</a></li>
-                        <li><a href="">Tratamiento Laser</a></li>
+                    <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
+                    <li><a href="/tratamientos/uñaEncarnada">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
                     </ul>
                 </div>
                 <div className="flex justify-center lg:flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
                     <ul>
-                        <li><a href="">Plantillas personalizadas</a></li>
+                        <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
+                        <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,13 +99,13 @@ export default function App() {
                     <li><a href="">hola@pododinamic</a></li>
                 </ul>
                 <div className="flex justify-center gap-1">
-                    <a href="">
+                    <a href="https://www.facebook.com/Pododinamic" target="_blank">
                         <img src={facebookICO.src} alt="facebook"/>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/pododinamic/" target="_blank">
                         <img src={instagramICO.src} alt="instagram"/>
                     </a>
-                    <a href="">
+                    <a href="https://wa.me/51986113262?text=Hola+me+gustaria+saber+más+sobre+PointerERP" target="_blank">
                         <img src={whatsappICO.src} alt="whatsapp"/>
                     </a>
                 </div>

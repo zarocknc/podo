@@ -11,9 +11,9 @@ import equipo from "@assets/subFooter/equipoEsp.png";
 
 <Layout title="Pododinamic | Plantillas">
 
-        <section class="lg:h-screen my-2 flex justify-center items-center h-full">
-			<div class="flex lg:flex-row justify-evenly flex-col-reverse w-full lg:h-full items-center px-4 gap-2 lg:gap-0">
-				<div class="lg:w-[40%] w-[80%] ">
+        <section class="lg:h-auto lg:my-6 py-14 lg:py-0  flex justify-center items-center h-auto">
+			<div class="flex lg:flex-row lg:justify-evenly justify-center flex-col-reverse w-full lg:h-full h-auto items-center px-4 gap-2 lg:gap-0">
+				<div class="lg:w-[35%] w-[80%] ">
 					<img src={portada.src} alt="" class="w-full lg:h-[60%]">
 				</div>
 				<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
@@ -27,57 +27,71 @@ import equipo from "@assets/subFooter/equipoEsp.png";
 			</div>
 		</section>
 
-		<section class="scroll-item  lg:h-screen my-2 w-full flex flex-col justify-center">
-			<div class="flex lg:flex-row flex-col w-full items-center justify-evenly">
+		<section class="scroll-item  lg:h-screen lg:my-6 my-12 lg:py-0 w-full flex flex-col justify-center px-4">
+			<div class="flex lg:flex-row flex-col w-full items-center justify-center lg:gap-0 gap-8">
 
-				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-evenly">
-					<div class="flex flex-col text-center items-center w-[45%] gap-4">
+				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
+					<div class="flex lg:flex-col flex-col-reverse  text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
 						<p class="w-full">
 							Comenzamos nuestra actividad ortopédica con la confección de plantillas ortopédicas genéricas de serie, siendo distribuidores a nivel nacional e internacional, con la marca ARCH-CONFORT, paralelamente brindabamos servicios a empresas prestigiosas como ORTOPEDIA WONG Y otros.
 						</p>
 						<h2 class="text-[#8AD2D2] text-6xl font-bold">1995</h2>
 					</div>
-					<div class="flex justify-center items-end w-[45%]">
-						<img src={fecha1.src} alt="" class="h-[60%] w-[80%]">
+					<div class="flex justify-center items-end w-[40%]">
+						<img src={fecha1.src} alt="" class="h-[60%] w-full">
 					</div>
 				</div>
 
-				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-evenly">
-					<div class="flex flex-col text-center items-center w-[45%] gap-4">
-						<p class="w-full">
-							Recibimos preparación y capacitación en biomecánica de la pisada y técnias ortopédicas de altísimo nivel en madrid españa en soportes plantares ergonómico cuyo principio es el contacto total, desde entonces damos a conocer este innovador producto, eficaz y funcional para la marcha humana, de gran calidad y confort.
-						</p>
-						<h2 class="text-[#0197BF] text-6xl font-bold">2019</h2>
-					</div>
-					<div class="flex justify-center items-end w-[45%]">
-						<img src={fecha2.src} alt="" class="h-[60%] w-[80%]">
-					</div>
-				</div>
-			</div>
-
-			<hr class="my-3 h-1 bg-[#1579BD] lg:block hidden">
-
-			<div class="flex lg:flex-row flex-col w-full items-center justify-evenly">
-				<div class="flex lg:flex-row-reverse flex-col w-[45%] justify-evenly">
-					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] gap-4">
+				<div class="lg:hidden flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
 						<p class="w-full">
 							Nuestro equipo humano recibe capacitación especializada en podología y ortopodología en una prestigiosa institución de salud "CARRION, EDUCACIÓN SUPERIOR" y la universidad UMDSM. Desde entonces seguimos capacitandonos en seminarios, talleres nacionales e internacionales de europa.
 						</p>
 						<h2 class="text-[#55BABB] text-6xl font-bold">2016</h2>
 					</div>
-					<div class="flex justify-center items-start w-[45%]">
-						<img src={fecha3.src} alt="" class="h-[60%] w-[80%]">
+					<div class="flex justify-center items-start w-[40%]">
+						<img src={fecha3.src} alt="" class="h-[60%] w-full">
 					</div>
 				</div>
-				<div class="flex lg:flex-row-reverse flex-col w-[45%] justify-evenly h-full">
+
+				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
+					<div class="flex flex-col text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+						<p class="w-full">
+							Recibimos preparación y capacitación en biomecánica de la pisada y técnias ortopédicas de altísimo nivel en madrid españa en soportes plantares ergonómico cuyo principio es el contacto total, desde entonces damos a conocer este innovador producto, eficaz y funcional para la marcha humana, de gran calidad y confort.
+						</p>
+						<h2 class="text-[#0197BF] text-6xl font-bold">2019</h2>
+					</div>
+					<div class="flex justify-center items-end w-[40%]">
+						<img src={fecha2.src} alt="" class="h-[60%] w-full">
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full flex justify-center">
+				<hr class="my-3 h-1 bg-[#1579BD] lg:block hidden w-[90%]">
+			</div>
+
+			<div class="flex lg:flex-row flex-col w-full items-center justify-center">
+				<div class="hidden lg:flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+						<p class="w-full">
+							Nuestro equipo humano recibe capacitación especializada en podología y ortopodología en una prestigiosa institución de salud "CARRION, EDUCACIÓN SUPERIOR" y la universidad UMDSM. Desde entonces seguimos capacitandonos en seminarios, talleres nacionales e internacionales de europa.
+						</p>
+						<h2 class="text-[#55BABB] text-6xl font-bold">2016</h2>
+					</div>
+					<div class="flex justify-center items-start w-[40%]">
+						<img src={fecha3.src} alt="" class="h-[60%] w-full">
+					</div>
+				</div>
+				<div class="flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2 lg:h-full">
 					<div class="flex flex-col text-center items-center lg:w-[45%] gap-4">
 						<h2 class="text-[#1579BD] text-6xl font-bold">2021</h2>
 						<p class="w-full">
 							Pododinamic dió un salto a la automatización con equipo moderno y herramientas profesionales que facilitaria la producción de soportes plantares (plantillas ortopédicas) y biomecánica de la marcha humana.
 						</p>
 					</div>
-					<div class="flex justify-center items-start w-[45%]">
-						<img src={fecha4.src} alt="" class="h-[60%] w-[80%]">
+					<div class="flex justify-center items-start w-[40%]">
+						<img src={fecha4.src} alt="" class="h-[60%] w-full">
 					</div>
 				</div>
 			</div>
@@ -85,8 +99,8 @@ import equipo from "@assets/subFooter/equipoEsp.png";
 
 		<section>
 			<div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-8 px-2 py-4 lg:py-0 w-full">
-				<div class="text-[#fff] flex items-center lg:w-[40%] lg:gap-4 gap-2 w-full">
-					<div class="flex text-center w-full lg:text-7xl text-sm">
+				<div class="text-[#fff] flex flex-col justify-center items-center lg:w-[40%] lg:gap-4 gap-2 w-full">
+					<div class="flex text-center justify-center w-full lg:text-7xl text-sm">
 						<h2 class="font-bold">2023</h2>
 					</div>
 					<div class="lg:text-center lg:w-[60%] w-full lg:text-base text-[10px]">
@@ -94,8 +108,8 @@ import equipo from "@assets/subFooter/equipoEsp.png";
 						<p >Estamos agradecidos muy sinceramente a nuestros clientes, proveedores, colaboradores y a nuestros competidores, porque sin todos ellos no hubiéramos podido crecer.</p>
 					</div>
 				</div>
-				<div class="lg:w-[65%]">
-					<img src={equipo.src} alt="">
+				<div class="lg:w-[30%]">
+					<img src={equipo.src} alt="" class="w-full">
 				</div>
 			</div>
 		</section>

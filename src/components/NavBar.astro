@@ -9,7 +9,7 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
 ---
 <!----contenedor padre del header y navbar -->
 <header class="scroll-nav relative">
-    <section class="flex  lg:justify-between items-center gap-2 bg-[#00bca7] w-full py-1 px-6">
+    <section class="flex  lg:justify-between items-center gap-2 bg-[#8FC751] w-full py-1 px-6">
         <div class="flex justify-center w-full text-[#fff] gap-2 items-center lg:text-base text-xs">
             <h3>Central de citas :</h3>
             <div class="flex lg:flex-row lg:gap-2">
@@ -51,41 +51,41 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
                 </div>
 
                 <div class="w-full justify-center flex lg:hidden ">
-                    <Image src={logo1} alt="A description of my image." class="lg:hidden w-[80%] my-2  "  />
+                    <a href="/" class="w-full justify-center flex"><Image src={logo1} alt="A description of my image." class="lg:hidden w-[80%] my-2" /></a>
                 </div>
 
                 <div class="flex flex-col lg:flex lg:flex-row lg:p-0 p-4 items-end relative">
                     <ul class="lg:flex lg:gap-4">
                         <li class="relative group">
-                            <button id="btn-plantillas" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">plantillas</button>
-                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute left-0 top-full  bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
-                            <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
-                            <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/plantillas/estudioBP" class="uppercase">e. biomecánico de la pisada</a></li>
+                            <button id="btn-plantillas" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">plantillas</button>
+                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute lg:left-0 -left-8 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                            <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
+                            <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/estudioBP" class="uppercase">estudio biomecánico de la pisada</a></li>
                             </ul>
                         </li>
                         <li class="relative">
-                            <button id="btn-tratamientos" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">tratamientos</button>
+                            <button id="btn-tratamientos" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">tratamientos</button>
                             <ul id="opt-tratamientos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/uñaEncarnada" class="uppercase">uña encarnada</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/uñaEncarnada" class="uppercase">uña encarnada</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
                             </ul>
                           </li>
                         <li class="relative">
-                            <button id="btn-especialidades" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">especialidades</button>
-                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/vidadiaria" class="uppercase">p. para la vida diaria</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/pInfantil" class="uppercase">p. infantil</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/deportiva" class="uppercase">p. deportiva</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/personasMayores" class="uppercase">p. personas mayores</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
+                            <button id="btn-especialidades" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">especialidades</button>
+                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute lg:left-0 -left-8 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/vidadiaria" class="uppercase">podología para la vida diaria</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/pInfantil" class="uppercase">podología infantil</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/deportiva" class="uppercase">podología deportiva</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/personasMayores" class="uppercase">podología personas mayores</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
                             </ul>
                         </li>
                         <li class="relative">
-                            <button id="btn-productos" class="uppercase z-10 font-bold lg:font-normal lg:hover:bg-red-500 p-1 rounded">productos</button>
+                            <button id="btn-productos" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">productos</button>
                             <ul id="opt-productos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
-                              <li class="hover:bg-[#0197BF] hover:text-white p-2"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
+                              <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
                             </ul>
                         </li>
                     </ul>

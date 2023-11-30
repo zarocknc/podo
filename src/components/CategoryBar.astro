@@ -8,35 +8,42 @@ import lupaICO from "@assets/subCategorias/lupaAM.png";
 import piesICO from "@assets/subCategorias/piesPC.png";
 
 import bgPB from "@assets/subCategorias/bgPB.svg";
+import logoB from "@assets/banner/logoB.png";
 ---
 
 
 
-<section class="lg:my-3  flex items-center justify-center my-2 text-[#fff]">
-    <div class="ctg-1 bg-[#55BABB] lg:px-20 lg:py-5 px-6 py-2">
-        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
-            <h4 class="uppercase">plantillas</h4>
-            <h4 class="uppercase font-bold">dinámicas</h4>
-        </a>
-    </div>
-    <div class="ctg-2 drop-shadow-lg bg-[#8FC751] lg:px-20 lg:py-5 px-6 py-2">
-        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
-            <h4 class="uppercase">análisis de</h4>
-            <h4 class="uppercase font-bold">la marcha</h4>
-        </a>
-    </div>
-    <div class="ctg-3 drop-shadow-lg bg-[#0197bf] lg:px-20 lg:py-5 px-6 py-2">
-        <a href="/"  class="btn-PB flex items-center w-full h-full justify-center flex-col text-xs lg:text-xl drop-shadow-lg">
-            <h4 class="uppercase">pedigrafía</h4>
-            <h4 class="uppercase font-bold">computarizada</h4>
-        </a>
+<section class="lg:my-3  flex items-center justify-center my-2 text-[#fff] bg-[#00b1bf]">
+    <div class="lg:py-4 py-2 flex justify-center items-center lg:gap-6 gap-3">
+        <img src={logoB.src} alt="">
+        <span class="lg:text-4xl">|</span>
+        <h2 id="banner" class="lg:text-4xl uppercase">Te acompañamos en cada paso</h2>
     </div>
 </section>
-<style>
-    .ctg-1{
-        border-radius: 8rem 0 0 0;
-    }
-    .ctg-3{
-        border-radius: 0 8rem 0 0;
-    }
-</style>
+
+<script is:inline>
+  const phrases = [
+    "Te acompañamos en cada paso",
+    "plantillas dinámicas personalizadas",
+    "análisis de la marchas"
+  ];
+
+  let currentIndex = 0;
+  const banner = document.getElementById("banner");
+
+  function updateBanner() {
+    banner.textContent = phrases[currentIndex];
+  }
+
+  function nextPhrase() {
+    currentIndex = (currentIndex + 1) % phrases.length;
+    updateBanner();
+  }
+
+  function startBannerRotation() {
+    setInterval(nextPhrase, 4000); // Cambia cada 5 segundos
+  }
+
+  // Inicia la rotación del banner al cargar la página
+  document.addEventListener("DOMContentLoaded", startBannerRotation);
+</script>
