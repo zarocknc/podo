@@ -1,33 +1,38 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import img1 from '../../assets/contacto/contacto.png';
+import EquipoEspecial from '@components/EquipoEspecial.astro';
+import Consulta from '@components/Consulta.astro';
 ---
 
 <Layout title="Pododinamic | Contacto"  >
-	<main class="w-full my-12">
-        <div class="flex flex-col items-center justify-center gap-4">
-            <div class="font-bold text-xl">Contactanos</div>
-            <div>
-                <form action="/contacto/formulario.php" method="post" class="text-left flex flex-col gap-4">
-                    <div class="flex lg:flex-row flex-col lg:gap-2 gap-4">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="p-1 border-2 rounded" required>
+	<main class="w-full lg:my-8 flex justify-center">
+        <div class="w-[40%]">
+            <img src={img1.src} alt="">
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 w-[35%]">
+            <div class="text-center">
+                <h6 class="uppercase text-[#8FC751] leading-3">¡estamos listos para atenderte!</h6>
+                <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">contacta</h2>
+                <h3 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-xl">con nosotros</h3>
+            </div>
+            <div class="w-[80%]">
+                <form action="/contacto/formulario.php" method="post" class="text-[#000] text-center flex flex-col gap-2">
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido" class="p-2 border-2 rounded-xl text-center" required>
 
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="p-1 border-2 rounded" required>
-                    </div>
-                    
-                    <div class="flex lg:flex-row flex-col lg:gap-2 gap-4">
-                        <input type="email" id="correo" name="correo" placeholder="Correo" class="p-1 border-2 rounded" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de contacto" class="p-2 border-2 rounded-xl text-center" required>
 
-                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="p-1 border-2 rounded" required>
-                    </div>
+                    <input type="email" id="correo" name="correo" placeholder="Déjanos tu correo electrónico" class="p-2 border-2 rounded-xl text-center" required>
                     
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="p-1 border-2 rounded resize-none" required></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu consulta" class="p-2 border-2 rounded-xl resize-none text-center" rows="5" cols="20" required></textarea>
                     
                     <div class="flex justify-center items-center w-full">
-                        <input type="submit" class="border-2 rounded lg:w-1/5 w-2/5" value="Enviar">
+                        <input type="submit" class="bg-[#00bbbc] text-[#fff] font-bold text-lg border-2 rounded-2xl py-4 lg:w-[50%] w-2/5" value="Enviar">
                     </div>
                 </form>
             </div>
         </div>
-
 	</main>
+    <EquipoEspecial />
+    <Consulta />
 </Layout>
