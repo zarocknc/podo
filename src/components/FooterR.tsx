@@ -19,7 +19,7 @@ export default function App() {
             <Accordion>
         <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
                 <ul className="flex flex-col justify-center">
-                    <li><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
+                    <li ><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
                     <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
                     <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
                     <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
@@ -67,36 +67,36 @@ export default function App() {
             <div className="flex justify-center flex-col">
                 <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
                 <ul>
-                    <li><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
-                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
-                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
-                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
+                    <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
+                    <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
+                    <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
+                    <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
                     <li><a href="">Cirugía Podológica</a></li>
                     <li><a href="">Protesis para Amputación</a></li>
-                    <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
+                    <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
                 </ul>
             </div>
             <div>
                 <div className="flex justify-center lg:flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 justify-center flex">tratamientos</h3>
                     <ul>
-                    <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
-                    <li><a href="/tratamientos/uñaEncarnada">Uña encarnada</a></li>
-                    <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
+                    <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
+                    <li><a href="/tratamientos/uñaEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Quiropodia</a></li>
                     </ul>
                 </div>
                 <div className="flex justify-center lg:flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
                     <ul>
-                        <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
-                        <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
+                        <li><a href="/plantillas/tiposPlantillas" className="hover:text-[#0197bf]">Tipos de plantillas</a></li>
+                        <li><a href="/plantillas/estudioBP" className="hover:text-[#0197bf]">Estudio biomecánico de la pisada</a></li>
                     </ul>
                 </div>
             </div>
             <div className="flex justify-center flex-col">
                 <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
                 <ul>
-                    <li><a href="">hola@pododinamic</a></li>
+                    <li><a href="" className="hover:text-[#0197bf]">hola@pododinamic</a></li>
                 </ul>
                 <div className="flex justify-center gap-1">
                     <a href="https://www.facebook.com/Pododinamic" target="_blank">

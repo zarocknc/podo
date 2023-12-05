@@ -1,21 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
-import img1 from '../../assets/tiposP/tp1.png';
-import img2 from '../../assets/tiposP/tp2.png';
-import img3 from '../../assets/tiposP/tp3.png';
-import img4 from '../../assets/tiposP/tp4.png';
-import img5 from '../../assets/tiposP/tp5.png';
-import img6 from '../../assets/tiposP/tp6.png';
+import img1 from '../../assets/tiposP/portadaTP.png';
+import img2 from '../../assets/tiposP/planti01.png';
+import img3 from '../../assets/tiposP/planti02.png';
+import img4 from '../../assets/tiposP/planti03.png';
+import img5 from '../../assets/tiposP/planti04.png';
+import img6 from '../../assets/tiposP/planti05.png';
+import cruzA from '../../assets/inicio/icon01.png';
 ---
 
 <Layout title="Pododinamic | Plantillas">
 
-        <section class="py-12 lg:py-4">
+        <section class="py-12 lg:py-4 relative">
 			<div class="flex lg:flex-row flex-col-reverse w-full h-full  lg:justify-evenly items-center px-4 gap-12 lg:gap-0">
 				<div class="lg:w-[35%] w-[80%]">
 					<img src={img1.src} alt="" class="w-full">
 				</div>
+				<img src={cruzA.src} alt="" class="w-8 absolute lg:top-8 lg:right-60">
 				<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
 					<h6 class="uppercase text-[#8FC751]">Te acompañamos en cada paso</h6>
 					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">plantillas</h2>
@@ -38,7 +40,7 @@ import img6 from '../../assets/tiposP/tp6.png';
 							<p class="lg:w-[60%]">Correctores de pies planos-valgos con el sistema Medial Hell Skive.</p>
 						</div>
 					</div>
-					<div class="lg:w-[35%] w-[50%]">
+					<div class="lg:w-[25%] w-[50%]">
 						<img src={img2.src} alt="" class="w-full">
 					</div>
 				</div>
@@ -50,7 +52,7 @@ import img6 from '../../assets/tiposP/tp6.png';
 							<p class="lg:w-[38%]">Te acompañan en cada paso... el primer contacto, talón - suelo, apoyo y despegue.</p>
 						</div>
 					</div>
-					<div class="lg:w-[35%] w-[50%]">
+					<div class="lg:w-[25%] w-[50%]">
 						<img src={img3.src} alt="" class="w-full">
 					</div>
 				</div>
@@ -68,7 +70,7 @@ import img6 from '../../assets/tiposP/tp6.png';
 							<p class="lg:w-[60%]">Correctores de pies planos-valgos con el sistema Medial Hell Skive.</p>
 						</div>
 					</div>
-					<div class="w-[35%]">
+					<div class="lg:w-[25%] w-[50%]">
 						<img src={img4.src} alt="" class="w-full">
 					</div>
 				</div>
@@ -80,7 +82,7 @@ import img6 from '../../assets/tiposP/tp6.png';
 							<p class="lg:w-[38%]">Te acompañan en cada paso... el primer contacto, talón - suelo, apoyo y despegue.</p>
 						</div>
 					</div>
-					<div class="w-[35%]">
+					<div class="lg:w-[25%] w-[50%]">
 						<img src={img5.src} alt="" class="w-full">
 					</div>
 				</div>
@@ -88,11 +90,11 @@ import img6 from '../../assets/tiposP/tp6.png';
 		</section>
 
 		<section class="scroll-item h-screen">
-			<div class="flex lg:flex-row-reverse flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
-				<div class="w-[80%]">
+			<div class="flex lg:flex-row-reverse flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-1">
+				<div class="lg:w-[35%] w-[80%]">
 					<img src={img6.src} alt="" class="w-full">
 				</div>
-				<div class="flex flex-col text-center w-[80%] lg:w-auto">
+				<div class="flex flex-col text-center w-[60%] lg:w-[50%]">
 					<h3 class="uppercase text-[#8FC751] lg:text-4xl text-2xl">plantillas</h3>
 					<h3 class="uppercase text-[#1579BD] lg:text-4xl text-2xl font-bold">dinámicas</h3>
 					<h3 class="uppercase text-[#1579BD] lg:text-4xl text-2xl font-bold">deportivas</h3>

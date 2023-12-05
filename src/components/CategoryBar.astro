@@ -1,24 +1,19 @@
 ---
-import pBiodinamicas from "@assets/subCategorias/pBiodinamic.png";
-import aMarcha from "@assets/subCategorias/aMarcha.png";
-import pComputarizada from "@assets/subCategorias/pComput.png";
-
-import plantillaICO from "@assets/subCategorias/plantillaPB.png";
-import lupaICO from "@assets/subCategorias/lupaAM.png";
-import piesICO from "@assets/subCategorias/piesPC.png";
-
-import bgPB from "@assets/subCategorias/bgPB.svg";
 import logoB from "@assets/banner/logoB.png";
+import podoIsoB from '../assets/banner/pododinamicisoB.png';
+import cruzB from '../assets/banner/cruzB.png';
 ---
 
 
 
-<section class="lg:my-3  flex items-center justify-center my-2 text-[#fff] bg-[#00b1bf]">
+<section class="fondoBanner lg:my-3 gap-5  flex  justify-center my-2 text-[#fff]">
+    <div class="flex justify-start h-full pt-2"><img src={cruzB.src} alt="" class="lg:w-5 w-3"></div>
     <div class="lg:py-4 py-2 flex justify-center items-center lg:gap-6 gap-3">
-        <img src={logoB.src} alt="">
-        <span class="lg:text-4xl">|</span>
-        <h2 id="banner" class="lg:text-4xl uppercase">Te acompañamos en cada paso</h2>
+        <img src={podoIsoB.src} alt="" class="w-10">
+        <span class="lg:text-4xl lg:block hidden">|</span>
+        <h2 id="banner" class="lg:text-4xl text-sm uppercase">Te acompañamos en cada paso</h2>
     </div>
+    <div class="flex h-full lg:pt-10 pt-8"><img src={cruzB.src} alt="" class="lg:w-5 w-3"></div>
 </section>
 
 <script is:inline>
@@ -47,3 +42,9 @@ import logoB from "@assets/banner/logoB.png";
   // Inicia la rotación del banner al cargar la página
   document.addEventListener("DOMContentLoaded", startBannerRotation);
 </script>
+<style>
+  .fondoBanner{
+        background-image: url('../assets/banner/bannerpromoc.png');
+        object-fit: cover;
+    }
+</style>

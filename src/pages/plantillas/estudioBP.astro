@@ -3,26 +3,20 @@ import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
 import EquipoEsp from '../../components/EquipoEspecial.astro';
 
-import img1 from '@assets/estudioBP/estudiobp1.png';
-import img2 from '@assets/estudioBP/estudiobp2.png';
-
-import sliderL1 from "@assets/slider/SLIDER-1920-X-500-PUBLI6.png";
-import sliderL2 from "@assets/slider/SLIDER-1920-X-500-PUBLI5.png";
-import sliderL3 from "@assets/slider/SLIDER-1920-X-500-PUBLI4.png";
-
-import sliderM1 from "@assets/slider/SLIDER-700-X-370-PROMOCIÓN.png";
-import sliderM2 from "@assets/slider/SLIDER-700-X-370-PUBLI1.png";
-import sliderM3 from "@assets/slider/SLIDER-700-X-370-PUBLI2.png";
+import img1 from '../../assets/estudioBP/image02.png';
+import img2 from '../../assets/estudioBP/image01.png';
+import cruzA from '../../assets/inicio/icon01.png';
 ---
 <Layout title="Pododinamic | Plantillas">
     <div class="relative z-40 w-full my-4 h-[80%]">
         <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
           <swiper-slide class="relative">
             <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
+              <div class="h-full lg:w-[50%] w-full flex justify-center items-center">
                 <img src={img1.src} alt="" class="lg:h-[90%] w-full">
               </div>
-              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+              <img src={cruzA.src} alt="" class="w-8 absolute lg:top-8 lg:right-20">
+              <div class="text-center lg:w-[35%] w-full flex flex-col justify-center items-center p-2">
                 <h6 class="uppercase text-[#8FC751]">estudio</h6>
                 <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">biomecánico</h2>
                 <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl ">de la pisada</h3>
