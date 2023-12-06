@@ -31,7 +31,7 @@ export default function App() {
         <AccordionItem key="2" aria-label="tratamientos" title="Tratamientos" >
                 <ul >
                     <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
-                    <li><a href="/tratamientos/uñaEncarnada">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/uEncarnada">Uña encarnada</a></li>
                     <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
                 </ul>
         </AccordionItem>
@@ -81,7 +81,7 @@ export default function App() {
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 justify-center flex">tratamientos</h3>
                     <ul>
                     <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
-                    <li><a href="/tratamientos/uñaEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
                     <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Quiropodia</a></li>
                     </ul>
                 </div>

@@ -2,8 +2,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
 import EquipoEspecial from '@components/EquipoEspecial.astro';
-import portada from '../../assets/productos/zapatos/portada.png';
-import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
+import portada from '../../assets/productos/zapatos/image12.png';
+import sandaliasAM1 from '../../assets/productos/zapatos/produc01a.png';
+import sandaliasAM2 from '../../assets/productos/zapatos/produc01b.png';
+import sandaliasAM3 from '../../assets/productos/zapatos/produc01c.png';
+import zapatillasO1 from '../../assets/productos/zapatos/produc02a.png';
+import zapatillasO2 from '../../assets/productos/zapatos/produc02b.png';
+import zapatillasO3 from '../../assets/productos/zapatos/produc02c.png';
+import zapatillasBR1 from '../../assets/productos/zapatos/produc03a.png';
+import zapatillasBR2 from '../../assets/productos/zapatos/produc03b.png';
+import zapatillasBR3 from '../../assets/productos/zapatos/produc03c.png';
+import sandaliasC1 from '../../assets/productos/zapatos/produc04a.png';
+import sandaliasC2 from '../../assets/productos/zapatos/produc04b.png';
+import sandaliasC3 from '../../assets/productos/zapatos/produc04c.png';
 ---
 
 <Layout title="Pododinamic | Plantillas">
@@ -29,11 +40,11 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
 			<div class="flex lg:flex-row flex-col-reverse w-full h-full lg:justify-evenly justify-center items-center px-4 gap-8 lg:gap-0">
 
 				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
-                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg z-20">
                       <swiper-slide class="relative">
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center items-center w-full h-full">
                           <div class="lg:w-full w-full flex justify-center items-center">
-                            <img src={sandalias1.src} alt="" class="w-full">
+                            <img src={sandaliasAM1.src} alt="" class="w-full">
                           </div>
                         </div>
                         
@@ -41,7 +52,14 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
                       <swiper-slide>
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full flex justify-center items-center">
-                            <img src={portada.src} alt="" class="w-full">
+                            <img src={sandaliasAM2.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={sandaliasAM3.src} alt="" class="w-full">
                           </div>
                         </div>
                       </swiper-slide>
@@ -71,11 +89,11 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
 			<div class="flex lg:flex-row flex-col-reverse w-full h-full lg:justify-evenly justify-center items-center px-4 gap-2 lg:gap-0">
 
 				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
-                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg z-20">
                       <swiper-slide class="relative">
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full w-full flex justify-center items-center">
-                            <img src={sandalias1.src} alt="" class="w-full">
+                            <img src={zapatillasO1.src} alt="" class="w-full">
                           </div>
                         </div>
                         
@@ -83,7 +101,14 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
                       <swiper-slide>
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full flex justify-center items-center">
-                            <img src={portada.src} alt="" class="w-full">
+                            <img src={zapatillasO2.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={zapatillasO3.src} alt="" class="w-full">
                           </div>
                         </div>
                       </swiper-slide>
@@ -113,11 +138,11 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
 			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
 
 				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
-                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg z-20">
                       <swiper-slide class="relative">
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full w-full flex justify-center items-center">
-                            <img src={sandalias1.src} alt="" class="w-full">
+                            <img src={zapatillasBR1.src} alt="" class="w-full">
                           </div>
                         </div>
                         
@@ -125,7 +150,14 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
                       <swiper-slide>
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full flex justify-center items-center">
-                            <img src={portada.src} alt="" class="w-full">
+                            <img src={zapatillasBR2.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={zapatillasBR3.src} alt="" class="w-full">
                           </div>
                         </div>
                       </swiper-slide>
@@ -155,11 +187,11 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
 			<div class="flex lg:flex-row flex-col-reverse w-full h-full justify-evenly items-center px-4 gap-2 lg:gap-0">
 
 				<div class="relative z-40 lg:w-[50%] w-[80%] my-4 lg:h-[80%]">
-                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg border-2 border-black z-20">
+                    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp lg:w-full h-full rounded-lg z-20">
                       <swiper-slide class="relative">
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full w-full flex justify-center items-center">
-                            <img src={sandalias1.src} alt="" class="w-full">
+                            <img src={sandaliasC1.src} alt="" class="w-full">
                           </div>
                         </div>
                         
@@ -167,7 +199,14 @@ import sandalias1 from '../../assets/productos/zapatos/sandalias.png';
                       <swiper-slide>
                         <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
                           <div class="lg:w-full flex justify-center items-center">
-                            <img src={portada.src} alt="" class="w-full">
+                            <img src={sandaliasC2.src} alt="" class="w-full">
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+                          <div class="lg:w-full flex justify-center items-center">
+                            <img src={sandaliasC3.src} alt="" class="w-full">
                           </div>
                         </div>
                       </swiper-slide>
