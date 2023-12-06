@@ -1,5 +1,7 @@
 # build output
 dist/
+dist.zip
+dist.rar
 
 # generated types
 .astro/
