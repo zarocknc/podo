@@ -23,8 +23,6 @@ export default function App() {
                     <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
                     <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
                     <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
-                    <li><a href="">Cirugía Podológica</a></li>
-                    <li><a href="">Protesis para Amputación</a></li>
                     <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
                 </ul>
         </AccordionItem>
@@ -43,7 +41,7 @@ export default function App() {
         </AccordionItem>
         <AccordionItem key="4" aria-label="nosotros" title="Nosotros">
                 <ul className="">
-                    <li><a href="">hola@pododinamic</a></li>
+                    <li><a href="mailto:informes@pododinamic.pe">informes@pododinamic.pe</a></li>
                 </ul>
         </AccordionItem>
         </Accordion>
@@ -64,25 +62,23 @@ export default function App() {
 
         {/* [/*--------------------------- FOOTER PARA LAPTOPS, ESCRITORIO--------------------------*/}
         <div className="hidden lg:flex w-full gap-32 justify-center bg-[#fff] p-4">
-            <div className="flex justify-center flex-col">
+            <div className="flex  flex-col">
                 <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
                 <ul>
                     <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
                     <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
                     <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
                     <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
-                    <li><a href="">Cirugía Podológica</a></li>
-                    <li><a href="">Protesis para Amputación</a></li>
                     <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
                 </ul>
             </div>
             <div>
                 <div className="flex justify-center lg:flex-col">
-                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 justify-center flex">tratamientos</h3>
+                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">tratamientos</h3>
                     <ul>
                     <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
                     <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
-                    <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Quiropodia</a></li>
+                    <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Onicomicosis</a></li>
                     </ul>
                 </div>
                 <div className="flex justify-center lg:flex-col">
@@ -96,7 +92,7 @@ export default function App() {
             <div className="flex justify-center flex-col">
                 <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
                 <ul>
-                    <li><a href="" className="hover:text-[#0197bf]">hola@pododinamic</a></li>
+                    <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
                 </ul>
                 <div className="flex justify-center gap-1">
                     <a href="https://www.facebook.com/Pododinamic" target="_blank">
@@ -110,7 +106,7 @@ export default function App() {
                     </a>
                 </div>
             </div>
-            <div className="w-64 flex items-center">
+            <div className="w-48 flex items-center">
                 <a href="/" className="w-full">
                     <img src={logoFooter.src} alt="logoFooter"/>
                 </a>

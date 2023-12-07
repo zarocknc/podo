@@ -42,7 +42,7 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
             </button>
         </div>
         <!---MENU DE NAVEGACION -->
-        <nav id="menu" class="hidden h-screen z-[999] top-0 bottom-0 right-0 bg-[#30c281] w-3/4 text-right lg:bg-transparent lg:right-auto lg:bottom-auto lg:top-auto lg:h-auto lg:w-auto lg:flex lg:items-center lg:gap-4">
+        <nav id="menu" class="hidden h-screen z-[999] top-0 bottom-0 right-0 left-0 bg-[#fff] w-screen text-left lg:bg-transparent lg:right-auto lg:bottom-auto lg:top-auto lg:h-auto lg:w-auto lg:flex lg:items-center lg:gap-4">
 
                 <div class="lg:hidden flex justify-end w-full p-4">
                     <button id="cerrar-menu">
@@ -54,26 +54,36 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
                     <a href="/" class="w-full justify-center flex"><Image src={logo1} alt="A description of my image." class="lg:hidden w-[80%] my-2" /></a>
                 </div>
 
-                <div class="flex flex-col lg:flex lg:flex-row lg:p-0 p-4 items-end relative">
+                
+                <div class="flex flex-col lg:flex lg:flex-row lg:p-0 p-4 relative">
                     <ul class="lg:flex lg:gap-4">
+                        <div class="w-full">
+                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                        </div>
                         <li class="relative group">
-                            <button id="btn-plantillas" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">plantillas</button>
-                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute lg:left-0 -left-8 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                            <button id="btn-plantillas" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">plantillas</button>
+                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/estudioBP" class="uppercase">estudio biomecánico de la pisada</a></li>
                             </ul>
                         </li>
+                        <div class="w-full">
+                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                        </div>
                         <li class="relative">
-                            <button id="btn-tratamientos" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">tratamientos</button>
+                            <button id="btn-tratamientos" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">tratamientos</button>
                             <ul id="opt-tratamientos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/uEncarnada" class="uppercase">uña encarnada</a></li>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
                             </ul>
                           </li>
+                          <div class="w-full">
+                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                        </div>
                         <li class="relative">
-                            <button id="btn-especialidades" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">especialidades</button>
-                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute lg:left-0 -left-8 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                            <button id="btn-especialidades" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">especialidades</button>
+                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/vidadiaria" class="uppercase">podología para la vida diaria</a></li>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/pInfantil" class="uppercase">podología infantil</a></li>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/deportiva" class="uppercase">podología deportiva</a></li>
@@ -81,31 +91,37 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
                             </ul>
                         </li>
+                        <div class="w-full">
+                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                        </div>
                         <li class="relative">
-                            <button id="btn-productos" class="uppercase z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">productos</button>
+                            <button id="btn-productos" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">productos</button>
                             <ul id="opt-productos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
                             </ul>
                         </li>
+                        <div class="w-full">
+                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                        </div>
                     </ul>
                 </div>
                 <!-------BOTONES------- -->
                 <div>
-                    <ul class="flex lg:gap-2 lg:flex-row lg:p-0 p-4 text-[#fff] items-end flex-col gap-3">
+                    <ul class="flex lg:gap-2 lg:flex-row lg:p-0 p-4 text-[#fff] flex-col gap-3">
                         <li>
                             <a href="/cursos"
-                                ><button class="uppercase bg-[#00bbbd] py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
+                                ><button class="uppercase bg-[#00bbbd] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
                             >
                         </li>
                         <li>
                             <a href="/contacto"
-                                ><button class="uppercase bg-[#70c946] py-1 px-5 rounded-xl hover:brightness-75">contacto</button></a
+                                ><button class="uppercase bg-[#70c946] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">contacto</button></a
                             >
                         </li>
                         <li>
                             <a href="/nosotros"
-                                ><button class="uppercase bg-[#0098c3] py-1 px-5 rounded-xl hover:brightness-75">nosotros</button></a
+                                ><button class="uppercase bg-[#0098c3] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">nosotros</button></a
                             >
                         </li>
                     </ul>

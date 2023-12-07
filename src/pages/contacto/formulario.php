@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"];
   
-    $destinatario = "joanfpg2002@gmail.com"; // Reemplaza esto con la dirección de correo a la que deseas enviar el mensaje.
+    $destinatario = "informes@pododinamic.pe"; // Reemplaza esto con la dirección de correo a la que deseas enviar el mensaje.
     $asunto = "Mensaje desde el formulario de contacto";
   
     $mensaje_correo = "Nombre: $nombre\n";
