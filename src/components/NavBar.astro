@@ -6,32 +6,40 @@ import menuICO from "../assets/header/iconos/hamburgerICO.svg";
 import cerrarICO from "@assets/header/iconos/x-12.svg";
 import { Image } from "astro:assets";
 import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
+
+import bannerSup from '../assets/header/bannersup.png';
 ---
 <!----contenedor padre del header y navbar -->
 <header class="scroll-nav relative">
-    <section class="fondo flex  lg:justify-between items-center gap-2 w-full py-1 px-6">
-        <div class="flex justify-center w-full text-[#fff] gap-2 items-center lg:text-base text-xs">
-            <h3>Central de citas :</h3>
-            <div class="flex lg:flex-row lg:gap-2">
-                <a href="https://indri.pe/" class="lg:block hidden">
-                    <img src={whatsappI.src} alt="">
-                </a>
-                <a href="tel:+51999888777">999 888 777</a>
-                <span class="lg:block hidden">/</span>
-                <a href="tel:+51999666555">999 666 555</a>
+
+    <section class="relative w-full lg:h-9 h-8">
+        <img src={bannerSup.src} alt="" class="h-full w-full relative">
+
+        <div class="absolute top-0 w-full flex pt-2 px-2">
+            <div class="flex justify-center lg:w-[96%] w-full text-[#fff] gap-2 items-center lg:text-base text-xs">
+                <h3>Central de citas :</h3>
+                <div class="flex lg:flex-row lg:gap-2">
+                    <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank" class="lg:block hidden">
+                        <img src={whatsappI.src} alt="">
+                    </a>
+                    <a href="tel:+51983949899">983 949 899</a>
+                    <span class="lg:block hidden">/</span>
+                    <a href="tel:+51983949899">983 949 899</a>
+                </div>
+        
             </div>
-    
+            <div class="hidden lg:flex justify-end gap-3">
+                <a href="https://www.facebook.com/Pododinamic" target="_blank">
+                    <img src={facebookICO.src} alt="">
+                </a>
+                <a href="https://www.instagram.com/pododinamic/" target="_blank">
+                    <img src={instagramICO.src} alt="">
+                </a>
+        
+            </div>
         </div>
-        <div class="hidden lg:flex justify-end gap-3">
-            <a href="https://indri.pe/">
-                <img src={facebookICO.src} alt="">
-            </a>
-            <a href="https://indri.pe/">
-                <img src={instagramICO.src} alt="">
-            </a>
-    
-        </div>
-    </section>
+      </section>
+
     <section class="flex align-middle justify-center items-center w-full py-2 px-4">
     
         <!----contenedor padre del logo -->
@@ -110,7 +118,7 @@ import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
                 <div>
                     <ul class="flex lg:gap-2 lg:flex-row lg:p-0 p-4 text-[#fff] flex-col gap-3">
                         <li>
-                            <a href="/cursos"
+                            <a href="/contacto"
                                 ><button class="uppercase bg-[#00bbbd] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
                             >
                         </li>

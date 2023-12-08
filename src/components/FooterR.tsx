@@ -101,7 +101,7 @@ export default function App() {
                     <a href="https://www.instagram.com/pododinamic/" target="_blank">
                         <img src={instagramICO.src} alt="instagram"/>
                     </a>
-                    <a href="https://wa.me/51986113262?text=Hola+me+gustaria+saber+más+sobre+PointerERP" target="_blank">
+                    <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank">
                         <img src={whatsappICO.src} alt="whatsapp"/>
                     </a>
                 </div>
