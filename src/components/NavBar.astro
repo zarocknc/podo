@@ -64,51 +64,95 @@ import bannerSup from '../assets/header/bannersup.png';
                 <div class="flex flex-col lg:flex lg:flex-row lg:p-0 p-4 relative">
                     <ul class="lg:flex lg:gap-4">
                         <div class="w-full">
-                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                            <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
-                        <li class="relative group">
-                            <button id="btn-plantillas" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">plantillas</button>
-                            <ul id="opt-plantillas" class="hidden text-center z-30 absolute lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                        <li>
+                            <span id="btn-plantillas" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">plantillas
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-plantillas" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            </span>
+                            <ul id="opt-plantillas" class="hidden text-sm text-left z-30 lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
+                             <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
+                            <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/estudioBP" class="uppercase">estudio biomecánico de la pisada</a></li>
                             </ul>
                         </li>
                         <div class="w-full">
-                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                            <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
-                        <li class="relative">
-                            <button id="btn-tratamientos" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">tratamientos</button>
-                            <ul id="opt-tratamientos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                        <li>
+                            <span id="btn-tratamientos" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">tratamientos
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-tratamientos" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            </span>
+                            <ul id="opt-tratamientos" class="hidden text-sm text-left z-30 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
+                                <div class="w-full">
+                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                    </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/uEncarnada" class="uppercase">uña encarnada</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
                             </ul>
                           </li>
                           <div class="w-full">
-                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                            <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
-                        <li class="relative">
-                            <button id="btn-especialidades" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">especialidades</button>
-                            <ul id="opt-especialidades" class="hidden text-center z-30 absolute lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-40 border-gray-200 rounded-lg">
+                        <li>
+                            <span id="btn-especialidades" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">especialidades
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-especialidades" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            </span>
+                            <ul id="opt-especialidades" class="hidden text-sm text-left z-30 lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
+                                <div class="w-full">
+                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                    </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/vidadiaria" class="uppercase">podología para la vida diaria</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/pInfantil" class="uppercase">podología infantil</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/deportiva" class="uppercase">podología deportiva</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/personasMayores" class="uppercase">podología personas mayores</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
                             </ul>
                         </li>
                         <div class="w-full">
-                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                            <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
-                        <li class="relative">
-                            <button id="btn-productos" class="uppercase text-2xl lg:text-base z-10 font-bold lg:font-normal hover:bg-[#0197BF] hover:text-white p-1 rounded">productos</button>
-                            <ul id="opt-productos" class="hidden text-center z-30 absolute left-0 top-full bg-[#fff] text-[#000] w-32 border-gray-200 rounded-lg">
+                        <li >
+                            <span id="btn-productos" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">productos
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-producto" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            </span>
+                            <ul id="opt-productos" class="hidden text-sm text-left z-30 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
+                                <div class="w-full">
+                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                    </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
+                              <div class="w-full">
+                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
+                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
                             </ul>
                         </li>
                         <div class="w-full">
-                            <hr class="my-1 h-1 bg-[#1579BD] lg:hidden block w-full">
+                            <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
                     </ul>
                 </div>
@@ -117,17 +161,17 @@ import bannerSup from '../assets/header/bannersup.png';
                     <ul class="flex lg:gap-2 lg:flex-row lg:p-0 p-4 text-[#fff] flex-col gap-3">
                         <li>
                             <a href="/contacto"
-                                ><button class="uppercase bg-[#00bbbd] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
+                                ><button class="uppercase bg-[#00bbbd] text-lg lg:text-base py-1 px-5 rounded-xl hover:brightness-75">cursos</button></a
                             >
                         </li>
                         <li>
                             <a href="/contacto"
-                                ><button class="uppercase bg-[#70c946] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">contacto</button></a
+                                ><button class="uppercase bg-[#70c946] text-lg lg:text-base py-1 px-5 rounded-xl hover:brightness-75">contacto</button></a
                             >
                         </li>
                         <li>
                             <a href="/nosotros"
-                                ><button class="uppercase bg-[#0098c3] text-2xl lg:text-base py-1 px-5 rounded-xl hover:brightness-75">nosotros</button></a
+                                ><button class="uppercase bg-[#0098c3] text-lg lg:text-base py-1 px-5 rounded-xl hover:brightness-75">nosotros</button></a
                             >
                         </li>
                     </ul>
@@ -153,15 +197,13 @@ import bannerSup from '../assets/header/bannersup.png';
         );
         
         
-        
-
-
     
         /*------------------mostrar opciones------------------*/
 
         /*-------------opcion PLANTILLA-------------*/
         const buttonP = document.getElementById("btn-plantillas");
         const optionP = document.getElementById("opt-plantillas");
+        const iconFlechaPlant = document.getElementById("flecha-plantillas");
         
         buttonP?.addEventListener("click", () => {
             if (optionP?.classList.contains("hidden")) {
@@ -169,14 +211,18 @@ import bannerSup from '../assets/header/bannersup.png';
                 optionT?.classList.add("hidden");
                 optionE?.classList.add("hidden");
                 optionPro?.classList.add("hidden"); // Abre el menú
+
+                iconFlechaPlant.classList.toggle("rotate-180");
             } else {
                 optionP?.classList.add("hidden"); // Cierra el menú
+                iconFlechaPlant.classList.toggle("rotate-180");
             } 
         });/*-----------------------------------*/
 
         /*-------------opcion TRATAMIENTOS-------------*/
         const buttonT = document.getElementById("btn-tratamientos");
         const optionT = document.getElementById("opt-tratamientos");
+        const iconFlechaT = document.getElementById("flecha-tratamientos");
         
         buttonT?.addEventListener("click", () => {
             if (optionT?.classList.contains("hidden")) {
@@ -184,13 +230,17 @@ import bannerSup from '../assets/header/bannersup.png';
                 optionP?.classList.add("hidden");
                 optionE?.classList.add("hidden");
                 optionPro?.classList.add("hidden"); // Abre el menú
+
+                iconFlechaT.classList.toggle("rotate-180");
             } else {
                 optionT?.classList.add("hidden"); // Cierra el menú
+                iconFlechaT.classList.toggle("rotate-180");
             } 
         });/*-----------------------------------*/
         /*-------------opcion ESPECIALIDADES-------------*/
         const buttonE = document.getElementById("btn-especialidades");
         const optionE = document.getElementById("opt-especialidades");
+        const iconFlechaEsp = document.getElementById("flecha-especialidades");
         
         buttonE?.addEventListener("click", () => {
             if (optionE?.classList.contains("hidden")) {
@@ -198,23 +248,32 @@ import bannerSup from '../assets/header/bannersup.png';
                 optionT?.classList.add("hidden");
                 optionP?.classList.add("hidden");
                 optionPro?.classList.add("hidden"); // Abre el menú
+
+                iconFlechaEsp.classList.toggle("rotate-180");
             } else {
                 optionE?.classList.add("hidden"); // Cierra el menú
+                iconFlechaEsp.classList.toggle("rotate-180");
             } 
         });/*-----------------------------------*/
         /*-------------opcion PRODUCTOS-------------*/
         const buttonPro = document.getElementById("btn-productos");
         const optionPro = document.getElementById("opt-productos");
-        
+        const iconFlechaP = document.getElementById("flecha-producto");
+
         buttonPro?.addEventListener("click", () => {
-            if (optionPro?.classList.contains("hidden")) {
-                optionPro?.classList.remove("hidden");
-                optionP?.classList.add("hidden");
-                optionE?.classList.add("hidden");
-                optionT?.classList.add("hidden"); // Abre el menú
-            } else {
-                optionPro?.classList.add("hidden"); // Cierra el menú
-            } 
+        if (optionPro?.classList.contains("hidden")) {
+            optionPro?.classList.remove("hidden");
+            optionP?.classList.add("hidden");
+            optionE?.classList.add("hidden");
+            optionT?.classList.add("hidden"); // Abre el menú
+
+            // Toggle the rotate-180 class on click
+            iconFlechaP.classList.toggle("rotate-180");
+        } else {
+            optionPro?.classList.add("hidden");
+            iconFlechaP.classList.toggle("rotate-180"); // Cierra el menú
+            // No need to toggle the class here, as you only want to rotate when opening
+        }
         });/*-----------------------------------*/
       </script>
 </header>
