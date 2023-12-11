@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
+import EquipoEspecial2 from '@components/EquipoEspecial2.astro';
+
 import img1 from '../../assets/tiposP/portadaTP.png';
 import img2 from '../../assets/tiposP/planti01.png';
 import img3 from '../../assets/tiposP/planti02.png';
@@ -9,8 +11,6 @@ import img5 from '../../assets/tiposP/planti04.png';
 import img6 from '../../assets/tiposP/planti05.png';
 import cruzA from '../../assets/inicio/icon01.png';
 
-import equipo from "@assets/subFooter/equipo02.png";
-import cruzB from '../../assets/banner/cruzB.png';
 ---
 
 <Layout title="Pododinamic | Plantillas">
@@ -108,24 +108,7 @@ import cruzB from '../../assets/banner/cruzB.png';
 				</div>
 			</div>
 		</section>
-
-		<section>
-			<div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-4 px-2 py-4 lg:py-4 w-full relative">
-				<div class="text-[#fff] flex flex-col items-center lg:w-[40%] lg:gap-4 gap-2 w-full h-full">
-					<div class="flex flex-col text-center w-full lg:text-4xl text-sm">
-						<h2 class="font-bold">Equipo Especializado</h2>
-						<h2>altamente profesional</h2>
-					</div>
-					<p class="lg:text-center w-[70%] lg:text-base text-[10px]">EN PODODINAMIC La fabricación de los soportes plantares ergonómicos personalizados, se basa en el principio de contacto total. Está a cargo por especialistas en formación continua en biomecánica de la pisada y técnicas ortopédicas de nivel europeo.</p>
-				</div>
-				<div class="w-[65%] lg:w-[25%]">
-					<img src={equipo.src} alt="" class="w-full">
-				</div>
-				<img src={cruzB.src} alt="" class="lg:w-10 w-4 absolute lg:top-8 lg:left-72  left-6 top-4">
-				<img src={cruzB.src} alt="" class="lg:w-16 w-8 absolute lg:bottom-8 lg:right-40 bottom-2 right-36">
-			</div>
-		</section>
-
+		<EquipoEspecial2 />
     <Consulta />
 </Layout>
 <style>

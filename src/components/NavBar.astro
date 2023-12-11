@@ -42,7 +42,7 @@ import bannerSup from '../assets/header/bannersup.png';
     
         <!----contenedor padre del logo -->
         <div class="flex w-full justify-center lg:gap-28 gap-16">
-            <a href="/" class="w-[80%]"><Image src={logo1} alt="A description of my image." class="lg:h-16 lg:w-auto "  /></a>
+            <a href="/" class="w-[80%]"><Image src={logo1} alt="A description of my image." class="lg:w-auto "  /></a>
             <button id="menu-button" class="lg:hidden block">
                 <img src={menuICO.src} alt="menu">
             </button>
@@ -67,17 +67,11 @@ import bannerSup from '../assets/header/bannersup.png';
                             <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
                         <li>
-                            <span id="btn-plantillas" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">plantillas
-                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-plantillas" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            <span id="btn-plantillas" class="uppercase lg:cursor-pointer w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white lg:px-4 lg:py-1 rounded">plantillas
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-plantillas" class="lg:hidden block transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
                             </span>
-                            <ul id="opt-plantillas" class="hidden text-sm text-left z-30 lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
-                             <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
+                            <ul id="opt-plantillas" class="hidden lg:absolute text-sm text-left lg:text-center z-30 top-full bg-[#fff] text-[#000] w-full lg:w-40 border-gray-200 rounded-lg">
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/tiposPlantillas" class="uppercase">tipos de plantillas</a></li>
-                            <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                             <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/plantillas/estudioBP" class="uppercase">estudio biomecánico de la pisada</a></li>
                             </ul>
                         </li>
@@ -85,21 +79,12 @@ import bannerSup from '../assets/header/bannersup.png';
                             <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
                         <li>
-                            <span id="btn-tratamientos" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">tratamientos
-                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-tratamientos" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            <span id="btn-tratamientos" class="uppercase lg:cursor-pointer w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white lg:px-4 lg:py-1 rounded">tratamientos
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-tratamientos" class="lg:hidden block transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
                             </span>
-                            <ul id="opt-tratamientos" class="hidden text-sm text-left z-30 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
-                                <div class="w-full">
-                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                    </div>
+                            <ul id="opt-tratamientos" class="hidden lg:absolute text-sm text-left lg:text-center z-30 top-full bg-[#fff] text-[#000] w-full lg:w-40 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/quiropodia" class="uppercase">quiropodia</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/uEncarnada" class="uppercase">uña encarnada</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/tratamientos/onicomicosis" class="uppercase">onicomicosis</a></li>
                             </ul>
                           </li>
@@ -107,29 +92,14 @@ import bannerSup from '../assets/header/bannersup.png';
                             <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
                         <li>
-                            <span id="btn-especialidades" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">especialidades
-                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-especialidades" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            <span id="btn-especialidades" class="uppercase lg:cursor-pointer w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white lg:px-4 lg:py-1 rounded">especialidades
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-especialidades" class="lg:hidden block transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
                             </span>
-                            <ul id="opt-especialidades" class="hidden text-sm text-left z-30 lg:left-0 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
-                                <div class="w-full">
-                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                    </div>
+                            <ul id="opt-especialidades" class="hidden lg:absolute text-sm text-left lg:text-center z-30 top-full bg-[#fff] text-[#000] w-full lg:w-40 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/vidadiaria" class="uppercase">podología para la vida diaria</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/pInfantil" class="uppercase">podología infantil</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/deportiva" class="uppercase">podología deportiva</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/personasMayores" class="uppercase">podología personas mayores</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/especialidades/fisioRehabi" class="uppercase">fisioterapia y rehabilitación</a></li>
                             </ul>
                         </li>
@@ -137,17 +107,11 @@ import bannerSup from '../assets/header/bannersup.png';
                             <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
                         </div>
                         <li >
-                            <span id="btn-productos" class="uppercase w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white p-1 rounded">productos
-                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-producto" class="transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
+                            <span id="btn-productos" class="uppercase lg:cursor-pointer w-full flex justify-between text-lg lg:text-base z-10 font-bold lg:font-normal lg:hover:bg-[#0197BF] lg:hover:text-white lg:px-4 lg:py-1 rounded">productos
+                                <svg xmlns="http://www.w3.org/2000/svg" id="flecha-producto" class="lg:hidden block transition-transform duration-300 transform" width="24" height="24" viewBox="0 0 24 24"><path fill="#0197bf" d="m7 10l5 5l5-5z"/></svg>
                             </span>
-                            <ul id="opt-productos" class="hidden text-sm text-left z-30 left-0 top-full bg-[#fff] text-[#000] w-full border-gray-200 rounded-lg">
-                                <div class="w-full">
-                                    <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                    </div>
+                            <ul id="opt-productos" class="hidden lg:absolute text-sm text-left lg:text-center z-30 top-full bg-[#fff] text-[#000] w-full lg:w-40 border-gray-200 rounded-lg">
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/zapatosNinho" class="uppercase">zapatos para niños</a></li>
-                              <div class="w-full">
-                                <hr class="my-1 h-[2px] bg-[#1579BD] lg:hidden block w-full">
-                                </div>
                               <li class="hover:bg-[#55BABB] hover:text-white p-2 lg:text-sm"><a href="/productos/soportesPlantares" class="uppercase">soportes plantares eva</a></li>
                             </ul>
                         </li>
