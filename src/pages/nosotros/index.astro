@@ -1,28 +1,34 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
-import EquipoEspecial2 from '@components/EquipoEspecial2.astro';
+import cruzB from '../../assets/banner/cruzB.png';
+import cruzA from '../../assets/inicio/icon01.png';
 
 import portada from '../../assets/nosotros/image11.png';
 import fecha1 from '../../assets/nosotros/hist01.png';
 import fecha2 from '../../assets/nosotros/hist02.png';
 import fecha3 from '../../assets/nosotros/hist03.png';
 import fecha4 from '../../assets/nosotros/hist04.png';
-import equipo from '../../assets/subFooter/equipo03.png';
+import equipo from '../../assets/subFooter/equipo02.png';
+
+import misionV from '../../assets/nosotros/image15.png';
+import calidad from '../../assets/nosotros/image16.png';
+import innovacion from '../../assets/nosotros/image17.png';
+import etica from '../../assets/nosotros/image18.png';
 
 ---
 
 <Layout title="Pododinamic | Plantillas">
 
-        <section class="lg:h-auto lg:my-6 py-14 lg:py-0  flex justify-center items-center h-auto">
+        <section class="lg:h-[80%] lg:my-6 py-14 lg:py-0  flex justify-center items-center h-auto">
 			<div class="flex lg:flex-row lg:justify-evenly justify-center flex-col-reverse w-full lg:h-full h-auto items-center px-4 gap-2 lg:gap-0">
 				<div class="lg:w-[35%] w-[80%] ">
 					<img src={portada.src} alt="" class="w-full lg:h-[60%]">
 				</div>
 				<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
 					<h6 class="uppercase text-[#8FC751]">nosotros</h6>
-					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">pododinamic</h2>
-					<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">historia</h3>
+					<h2 class="uppercase text-[#1579BD] lg:text-6xl text-4xl font-bold">pododinamic</h2>
+					<h3 class="uppercase text-[#55BABB] lg:text-4xl text-2xl">historia</h3>
 					<div class="flex justify-center items-center w-full mt-2">
 						<p class="lg:w-[60%] w-full">Somos una empresa conformado por un equipo humano con conocimientos podológicos, biomecánicos, grandes ideas, ilusión, humildad, perseverancia y superación.</p>
 					</div>
@@ -30,11 +36,96 @@ import equipo from '../../assets/subFooter/equipo03.png';
 			</div>
 		</section>
 
-		<section class="scroll-item  lg:h-screen lg:my-6 my-12 lg:py-0 w-full flex flex-col justify-center px-4">
-			<div class="flex lg:flex-row flex-col w-full items-center justify-center lg:gap-0 gap-8">
+		<section class="h-screen w-full flex justify-center items-center">
+			<div class="flex w-full lg:h-[80%] lg:justify-evenly items-center lg:flex-row flex-col-reverse gap-4 relative">
+				<img src={misionV.src} alt="" class="lg:w-[40%] w-[60%] h-full">
+				<img src={cruzA.src} alt="" class="absolute lg:top-8 lg:w-10 w-5 top-1 right-72 lg:right-[36rem]">
+				<img src={cruzA.src} alt="" class="absolute lg:bottom-4 lg:w-10 w-5 bottom-48 lg:right-24 right-8">
+				<div class="flex flex-col justify-center items-center gap-8 lg:w-[40%] w-full">
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[80%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">misión</h2>
+						<p class="text-sm lg:text-base">Nuestro propósito es acompañar a nuestros pacientes desde el primer contacto y consigan gradualmente salud y el bienestar desde el cuidado de su único punto de contacto con la tierra: sus pies. Poniendo a su disposición el servicio de podología, biomecánica y fisioterapia de máxima calidad, tecnologías innovadoras, personal cualificado y comprometido.</p>
+					</div>
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[80%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">visión</h2>
+						<p class="text-sm lg:text-base">Llevar la podología, la biomecánica y fisioterapia integrada, a los 4 puntos cardinales de nuestra nación y llevar nuestro servicio y productos ortopédicos a nivel internacional en nuevos mercados. Visualizamos, en definitiva un futuro cercano en que Pododinamic seguirá equipándose con innovaciones tecnológicas sostenibles e inteligencia artificial para el beneficio y alcance de la población nacional e internacional.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="h-screen w-full flex justify-center items-center">
+			<div class="flex w-full lg:h-[80%] lg:justify-evenly items-center lg:flex-row flex-col-reverse gap-4 relative">
+				<img src={calidad.src} alt="" class="lg:w-[40%] w-[60%] h-full">
+				<img src={cruzA.src} alt="" class="absolute lg:top-16 lg:w-10 w-5 top-1 right-72 lg:right-24">
+				<img src={cruzA.src} alt="" class="absolute lg:bottom-4 lg:w-10 w-5 bottom-48 lg:right-[36rem] right-8">
+				<div class="flex flex-col justify-center items-center gap-8 lg:w-[40%] w-[80%]">
+					<div class="text-center gap-2 lg:gap-0 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">compromiso</h2>
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">con la calidad</h2>
+						<p class="text-sm lg:text-base">Buscamos la excelencia en nuestros servicios, productos y tratamientos mediante capacitaciones continuadas.</p>
+					</div>
+					<div class="text-center gap-2 lg:gap-0 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">profesionalismo</h2>
+						<p class="text-sm lg:text-base">Promovemos el trato respetuoso, digno, cálido a nuestros pacientes.</p>
+					</div>
+					<div class="text-center gap-2 lg:gap-0 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">responsabilidad</h2>
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">social</h2>
+						<p class="text-sm lg:text-base">Tenemos un compromiso con la sociedad de minimizar cualquier impacto negativo. Con buenas prácticas sostenibles como reducción de residuos y materiales reciclables.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="h-screen w-full flex justify-center items-center">
+			<div class="flex w-full lg:h-[80%] lg:justify-evenly items-center lg:flex-row flex-col-reverse gap-4 relative">
+				<img src={innovacion.src} alt="" class="lg:w-[40%] w-[60%] h-full">
+				<img src={cruzA.src} alt="" class="absolute lg:top-8 lg:w-10 w-5 top-1 right-72 lg:right-[36rem]">
+				<img src={cruzA.src} alt="" class="absolute lg:bottom-4 lg:w-10 w-5 bottom-48 lg:right-24 right-8">
+				<div class="flex flex-col justify-center items-center gap-8 lg:w-[40%] w-[80%]">
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">innovación</h2>
+						<p class="text-sm lg:text-base">Apostamos por la tecnología, automatización, técnias ortopédicas actuales como base de nuestra actividad y nuestros servicios.</p>
+					</div>
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">tu mejor compañia</h2>
+						<p class="text-sm lg:text-base">Anhelamos ser tus podólogos de cabecera, los responsables de que la salud de tus pies, y de los pies de los que amas, estén en las mejores manos.</p>
+					</div>
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">igualdad</h2>
+						<p class="text-sm lg:text-base">Defendemos con el ejemplo la igualdad de oportunidades y aplicamos políticas internas que aseguren este objetivo en nuestra empresa.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="h-screen w-full flex justify-center items-center">
+			<div class="flex w-full lg:h-[80%] lg:justify-evenly items-center lg:flex-row flex-col-reverse gap-4 relative">
+				<img src={etica.src} alt="" class="lg:w-[40%] w-[60%] h-full">
+				<img src={cruzA.src} alt="" class="absolute lg:top-16 lg:w-10 w-5 top-1 right-72 lg:right-24">
+				<img src={cruzA.src} alt="" class="absolute lg:bottom-4 lg:w-10 w-5 bottom-48 lg:right-[36rem] right-8">
+				<div class="flex flex-col justify-center items-center gap-8 lg:w-[40%] w-[80%]">
+					<div class="text-center gap-2 lg:gap-0 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">compromiso</h2>
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">con la educación</h2>
+						<h2 class="uppercase text-[#55BABB] leading-4 lg:text-4xl text-2xl ">podológica</h2>
+						<p class="text-sm lg:text-base">Estamos comprometidos con la educación podológica de nuestros pacientes, manteniéndolos bien informados sonre los problemas de los pies y como prevenirlos.</p>
+					</div>
+					<div class="text-center gap-2 flex flex-col lg:w-[70%] w-[90%]">
+						<h2 class="uppercase text-[#55BABB] lg:text-4xl text-2xl ">ética</h2>
+						<p class="text-sm lg:text-base">Trabajamos para que nuestras buenas prácticas, sean justas, honestas y transparentes.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--------linea de tiempo------------------>
+		<section class=" lg:h-screen lg:my-6 my-12 lg:py-0 w-full flex flex-col justify-center px-4">
+			<div class="flex lg:flex-row flex-col w-full items-center justify-center lg:gap-0">
 
 				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
-					<div class="flex lg:flex-col flex-col-reverse  text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+					<div class="flex lg:flex-col flex-col-reverse  text-center items-center lg:w-[45%] w-full lg:gap-4 gap-1">
 						<p class="w-full">
 							Comenzamos nuestra actividad ortopédica con la confección de plantillas ortopédicas genéricas de serie, siendo distribuidores a nivel nacional e internacional, con la marca ARCH-CONFORT, paralelamente brindabamos servicios a empresas prestigiosas como ORTOPEDIA WONG Y otros.
 						</p>
@@ -45,8 +136,8 @@ import equipo from '../../assets/subFooter/equipo03.png';
 					</div>
 				</div>
 
-				<div class="lg:hidden flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
-					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+				<div class="lg:hidden flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2 mt-12 lg:mt-0">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-1">
 						<p class="w-full">
 							Nuestro equipo humano recibe capacitación especializada en podología y ortopodología en una prestigiosa institución de salud "CARRION, EDUCACIÓN SUPERIOR" y la universidad UMDSM. Desde entonces seguimos capacitandonos en seminarios, talleres nacionales e internacionales de europa.
 						</p>
@@ -57,8 +148,8 @@ import equipo from '../../assets/subFooter/equipo03.png';
 					</div>
 				</div>
 
-				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
-					<div class="flex flex-col text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+				<div class="flex lg:flex-row flex-col lg:w-[45%] justify-center items-center lg:gap-8 mt-12 lg:mt-0">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-1">
 						<p class="w-full">
 							Recibimos preparación y capacitación en biomecánica de la pisada y técnias ortopédicas de altísimo nivel en madrid españa en soportes plantares ergonómico cuyo principio es el contacto total, desde entonces damos a conocer este innovador producto, eficaz y funcional para la marcha humana, de gran calidad y confort.
 						</p>
@@ -75,8 +166,8 @@ import equipo from '../../assets/subFooter/equipo03.png';
 			</div>
 
 			<div class="flex lg:flex-row flex-col w-full items-center justify-center">
-				<div class="hidden lg:flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2">
-					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-2">
+				<div class="hidden lg:flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2 mt-12 lg:mt-0">
+					<div class="flex flex-col-reverse text-center items-center lg:w-[45%] w-full lg:gap-4 gap-1">
 						<p class="w-full">
 							Nuestro equipo humano recibe capacitación especializada en podología y ortopodología en una prestigiosa institución de salud "CARRION, EDUCACIÓN SUPERIOR" y la universidad UMDSM. Desde entonces seguimos capacitandonos en seminarios, talleres nacionales e internacionales de europa.
 						</p>
@@ -86,8 +177,8 @@ import equipo from '../../assets/subFooter/equipo03.png';
 						<img src={fecha3.src} alt="" class="h-[60%] w-full">
 					</div>
 				</div>
-				<div class="flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2 lg:h-full">
-					<div class="flex flex-col text-center items-center lg:w-[45%] gap-4">
+				<div class="flex lg:flex-row-reverse flex-col lg:w-[45%] justify-center items-center lg:gap-8 gap-2 lg:h-full mt-12 lg:mt-0">
+					<div class="flex flex-col text-center items-center lg:w-[45%] lg:gap-4 gap-1">
 						<h2 class="text-[#1579BD] text-6xl font-bold">2021</h2>
 						<p class="w-full">
 							Pododinamic dió un salto a la automatización con equipo moderno y herramientas profesionales que facilitaria la producción de soportes plantares (plantillas ortopédicas) y biomecánica de la marcha humana.
@@ -99,6 +190,27 @@ import equipo from '../../assets/subFooter/equipo03.png';
 				</div>
 			</div>
 		</section>
-		<EquipoEspecial2 />
+
+		<!----------------------------- -->
+
+		<section>
+			<div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-8 px-2 py-4 lg:py-2 w-full gap-4 relative">
+				<div class="text-[#fff] flex flex-col justify-center items-center lg:w-[40%] lg:gap-4 gap-2 w-full">
+					<div class="flex text-center justify-center w-full lg:text-7xl text-5xl">
+						<h2 class="font-bold">2023</h2>
+					</div>
+					<div class="lg:text-center lg:w-[60%] w-full lg:text-base text-[10px]">
+						<p>Actualmente brindamos servicio integral de podología, biomecánica de la marcha, fisioterapia y rehabilitación en nuestro centro de atención.</p>
+						<p >Estamos agradecidos muy sinceramente a nuestros clientes, proveedores, colaboradores y a nuestros competidores, porque sin todos ellos no hubiéramos podido crecer.</p>
+					</div>
+				</div>
+				<div class="lg:w-[30%] w-[80%]">
+					<img src={equipo.src} alt="" class="w-full">
+				</div>
+				<img src={cruzB.src} alt="" class="lg:w-10 w-4 absolute lg:top-8 lg:left-72  left-6 top-4">
+				<img src={cruzB.src} alt="" class="lg:w-16 w-8 absolute lg:bottom-8 lg:right-40 bottom-2 right-36">
+			</div>
+		</section>
+
     <Consulta />
 </Layout>
