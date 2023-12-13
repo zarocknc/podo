@@ -66,55 +66,62 @@ export default function App() {
 
 
         {/* [/*--------------------------- FOOTER PARA LAPTOPS, ESCRITORIO--------------------------*/}
-        <div className="hidden lg:flex w-full gap-32 justify-center bg-[#fff] p-4">
-            <div className="flex  flex-col">
-                <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
-                <ul>
-                    <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
-                    <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
-                    <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
-                    <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
-                    <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
-                </ul>
-            </div>
-            <div>
-                <div className="flex justify-center lg:flex-col">
-                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">tratamientos</h3>
+        <div className="hidden lg:flex flex-col bg-[#fff] ">
+            <div className="lg:flex w-full gap-32 justify-center p-4">
+                <div className="flex  flex-col">
+                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
                     <ul>
-                    <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
-                    <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
-                    <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Onicomicosis</a></li>
+                        <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
+                        <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
+                        <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
+                        <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
+                        <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
                     </ul>
                 </div>
-                <div className="flex justify-center lg:flex-col">
-                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
+                <div>
+                    <div className="flex justify-center lg:flex-col">
+                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">tratamientos</h3>
+                        <ul>
+                        <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
+                        <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
+                        <li><a href="/tratamientos/onicomicosis" className="hover:text-[#0197bf]">Onicomicosis</a></li>
+                        </ul>
+                    </div>
+                    <div className="flex justify-center lg:flex-col">
+                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
+                        <ul>
+                            <li><a href="/plantillas/tiposPlantillas" className="hover:text-[#0197bf]">Tipos de plantillas</a></li>
+                            <li><a href="/plantillas/estudioBP" className="hover:text-[#0197bf]">Estudio biomecánico de la pisada</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="flex justify-center flex-col">
+                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
                     <ul>
-                        <li><a href="/plantillas/tiposPlantillas" className="hover:text-[#0197bf]">Tipos de plantillas</a></li>
-                        <li><a href="/plantillas/estudioBP" className="hover:text-[#0197bf]">Estudio biomecánico de la pisada</a></li>
+                        <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
                     </ul>
+                    <div className="flex justify-center gap-1">
+                        <a href="https://www.facebook.com/Pododinamic" target="_blank">
+                            <img src={facebookICO.src} alt="facebook"/>
+                        </a>
+                        <a href="https://www.instagram.com/pododinamic/" target="_blank">
+                            <img src={instagramICO.src} alt="instagram"/>
+                        </a>
+                        <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank">
+                            <img src={whatsappICO.src} alt="whatsapp"/>
+                        </a>
+                    </div>
+                </div>
+                <div className="w-48 flex items-center">
+                    <a href="/" className="w-full">
+                        <img src={logoFooter.src} alt="logoFooter"/>
+                    </a>
                 </div>
             </div>
-            <div className="flex justify-center flex-col">
-                <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
-                <ul>
-                    <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
-                </ul>
-                <div className="flex justify-center gap-1">
-                    <a href="https://www.facebook.com/Pododinamic" target="_blank">
-                        <img src={facebookICO.src} alt="facebook"/>
-                    </a>
-                    <a href="https://www.instagram.com/pododinamic/" target="_blank">
-                        <img src={instagramICO.src} alt="instagram"/>
-                    </a>
-                    <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank">
-                        <img src={whatsappICO.src} alt="whatsapp"/>
-                    </a>
-                </div>
-            </div>
-            <div className="w-48 flex items-center">
-                <a href="/" className="w-full">
-                    <img src={logoFooter.src} alt="logoFooter"/>
-                </a>
+            <div className="text-sm text-center flex w-full flex-wrap justify-center p-4 items-center ">
+                <p>© 2023 Web desarrollado por </p>
+                <a href="https://indri.pe/" target="_blank"><img src={logoIndri.src} alt="logo-indri" className="w-12 mx-1" /></a>
+                <span>.Todos los derechos reservados PODODINAMIC</span>
             </div>
         </div>
     </footer>
