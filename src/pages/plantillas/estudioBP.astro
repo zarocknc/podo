@@ -9,63 +9,48 @@ import cruzA from '../../assets/inicio/icon01.png';
 
 ---
 <Layout title="Pododinamic | Estudio Biomecánico de la Pisada">
-    <div class="relative z-40 w-full my-4 h-[80%]">
-        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
-          <swiper-slide class="relative">
-            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
-                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
-              </div>
-              <img src={cruzA.src} alt="" class="w-8 absolute lg:top-8 lg:right-20">
-              <div class="text-center lg:w-[35%] w-full flex flex-col justify-center items-center p-2">
-                <h6 class="uppercase text-[#8FC751]">estudio</h6>
-                <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">biomecánico</h2>
-                <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl ">de la pisada</h3>
-                <div class="w-[90%] lg:w-[75%] flex flex-col justify-center mt-3">
-                  <span class="text-center font-bold">FOOSCAN plate 1.5 m RSscan, software V9 Clinical</span>
-                  <p class="text-[#000]">Esto incluirá observar su modo de andar (la forma en que camina) y crear un mapeo digital de fuerza/presión que les indique lo que sucede dentro de su pie mientras camina.</p>
-                </div>
+      <div class="px-2">
+        <section class="scroll-nav w-full h-full my-4">
+          <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
+              <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+            </div>
+            <div class="text-center lg:w-[35%] w-full flex flex-col justify-center items-center p-2">
+              <h6 class="uppercase text-[#8FC751]">estudio</h6>
+              <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">biomecánico</h2>
+              <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl ">de la pisada</h3>
+              <div class="w-[90%] lg:w-[75%] flex flex-col justify-center mt-3">
+                <span class="text-center font-bold">FOOSCAN plate 1.5 m RSscan, software V9 Clinical</span>
+                <p class="text-[#000]">Esto incluirá observar su modo de andar (la forma en que camina) y crear un mapeo digital de fuerza/presión que les indique lo que sucede dentro de su pie mientras camina.</p>
               </div>
             </div>
-            
-          </swiper-slide>
-          <swiper-slide>
-            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
-                <img src={img2.src} alt="" class="h-[90%] w-full">
-              </div>
-              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
-                <div class="w-[90%] lg:w-[75%] flex justify-center text-left p-2">
-                  <p class="text-[#000]">El estudio biomecánico de la marcha permite realizar un análisis del pie tanto en posición estática, sin que la persona se mueva, como dinámica, observando la forma de caminar del paciente y analizando toda una serie de datos que proporciona el estudio, así como la relación de los pies al caminar con otras estructuras, como la rodilla, la cadera y la columna vertebral.</p>
-                </div>
+          </div>
+        </section>
+        
+        <section class="scroll-nav w-full h-screen my-4">
+          <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
+              <img src={img2.src} alt="" class="lg:h-[90%] w-full">
+            </div>
+            <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
+              <div class="w-[90%] lg:w-[65%] flex justify-center lg:text-center p-2">
+                <p class="text-[#000]">El estudio biomecánico de la marcha permite realizar un análisis del pie tanto en posición estática, sin que la persona se mueva, como dinámica, observando la forma de caminar del paciente y analizando toda una serie de datos que proporciona el estudio, así como la relación de los pies al caminar con otras estructuras, como la rodilla, la cadera y la columna vertebral.</p>
               </div>
             </div>
-          </swiper-slide>
-        </swiper-container>
-      </div>
-      
-      <script>
-        import { register } from "swiper/element/bundle";
-        register();
-      </script>
+          </div>
+        </section>
+        </div>
       <EquipoEspecial2 />
       <Consulta />
 </Layout>
 <style>
-  swiper-container::part(button-next) {
-  @apply hidden lg:block;
-}
-  swiper-container::part(button-prev) {
-    @apply hidden lg:block;
-}
-  swiper-container::part(bullet-active) {
-  background-color: #0197BF;
-  width: 16px;
-  height: 16px;
-}
-swiper-container::part(bullet) {
-  background-color: #0197BF !important;;
-  width: 16px;
-  height: 16px;
-}
+	html{
+		scroll-snap-type: y mandatory;
+	}
+	.scroll-item{
+		scroll-snap-align: center;
+	}
+	.scroll-nav{
+		scroll-snap-align: center;
+	}
 </style>

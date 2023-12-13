@@ -7,67 +7,53 @@ import img1 from '@assets/especialidades/image08.png';
 import img2 from '@assets/especialidades/image08b.png';
 ---
 <Layout title="Podología | Deportiva">
-    <div class="relative z-40 w-full my-4 h-[80%]">
-        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000" pagination="true" class="estiobp w-[90%] h-full rounded-lg z-20">
-          <swiper-slide class="relative">
-            <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-              <div class="h-full lg:w-[45%] w-full flex justify-center items-center">
-                <img src={img1.src} alt="" class="lg:h-[90%] w-full">
-              </div>
-              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
+      <div class="px-2">
+        <section class="scroll-nav w-full h-[90vh] my-4">
+          <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-center gap-12 items-center w-full h-[80%]">
+            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
+              <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+            </div>
+            <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
                 <h6 class="uppercase text-[#8FC751] leading-3">especialidad</h6>
                 <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">podología</h2>
                 <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">deportiva</h3>
                 <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3">
-                  <p class="text-[#000] text-sm lg:text-base">Es la especialidad de la podología que trata las patologías y lesiones del pie que se manifiestan por causas de origen deportivo. Se encarga de equilibrar presiones y evitar la excesiva fatiga en ligamentos, músculos, tendones y articulaciones de deportistas, con el objetivo final de prevenir lesiones.</p>
+                  <p class="text-[#000] text-sm lg:text-base">Es la especialidad de la podología que trata las patologías y lesiones del pie que se manifiestan por causas de origen deportivo. Se encarga de equilibrar presiones y evitar la fatiga excesiva en ligamentos, músculos, tendones y articulaciones de deportistas, con el objetivo final de prevenir lesiones y mejorar su rendimiento deportivo.</p>
                 </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="scroll-nav w-full h-screen my-4">
+          <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
+            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
+              <img src={img2.src} alt="" class="lg:h-[90%] w-full">
+            </div>
+            <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
+              <div class="w-[95%] lg:w-[75%] flex flex-col justify-center text-left p-2">
+                <span class="text-[#000] font-bold text-sm lg:text-base">¿Qué lesiones deportivas son las más frecuentes?</span>
+                <p class="lg:mt-4 mt-2 text-xs lg:text-base">En general, las lesiones más comunes en el deporte son:</p>
+                <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
+                  <li>Las lesiones de las partes blandas: por ejemplo, los trastornos de las uñas, la bursitis y la hiperqueratosis.</li>
+                  <li>Entre las lesiones de las estructuras óseas son muy frecuentes las sobrecargas de los metatarsianos (zona de las almohadillas del pie), que producen un dolor localizado en la planta del pie. Suele darse en atletas y personas que practican deportes de alto impacto, las cuales llevan un calzado con una suela muy delgada; o en bailarinas clásicas que soportan mucho peso de puntillas.</li>
+                  <li>Se pueden producir lesiones en las estructuras superiores de la planta del pie, dependiendo de la biomecánica y de la manera en que una persona corra, camine o practique un deporte. Entre ellas, cabe destacar los esguinces de repetición del tobillo. Una pronación acentuada puede llegar a ocasionar trastornos en las rodillas, de menisco, o de rótula, entre otros.</li>
+                </ul>
               </div>
             </div>
-            
-          </swiper-slide>
-          <swiper-slide>
-            <div class="flex lg:flex-row flex-col-reverse lg:justify-center  items-center w-full h-full">
-              <div class="hidden h-full lg:w-[45%] w-full lg:flex justify-center items-center">
-                <img src={img2.src} alt="" class="h-[90%] w-full">
-              </div>
-              <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center h-full">
-                <div class="w-[95%] lg:w-[75%] flex flex-col justify-center text-left p-2">
-                  <span class="text-[#000] font-bold text-sm lg:text-base">¿Qué lesiones deportivas son las más frecuentes?</span>
-                  <p class="lg:mt-4 mt-2 text-xs lg:text-base">En general, las lesiones más comunes en el deporte son:</p>
-                  <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
-                    <li>Las lesiones de las partes blandas: por ejemplo, los trastornos de las uñas, la bursitis y la hiperqueratosis.</li>
-                    <li>Entre las lesiones de las estructuras óseas son muy frecuentes las sobrecargas de los metatarsianos (zona de las almohadillas del pie), que producen un dolor localizado en la planta del pie. Suele darse en atletas y personas que practican deportes de alto impacto, las cuales llevan un calzado con una suela muy delgada; o en bailarinas clásicas que soportan mucho peso de puntillas.</li>
-                    <li>Se pueden producir lesiones en las estructuras superiores de la planta del pie, dependiendo de la biomecánica y de la manera en que una persona corra, camine o practique un deporte. Entre ellas, cabe destacar los esguinces de repetición del tobillo. Una pronación acentuada puede llegar a ocasionar trastornos en las rodillas, de menisco, o de rótula, entre otros.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-      </div>
-      
-      <script>
-        import { register } from "swiper/element/bundle";
-        register();
-      </script>
+          </div>
+        </section>
+        </div>
         <EquipoEsp />
       <Consulta />
 </Layout>
 <style>
-  swiper-container::part(button-next) {
-  @apply hidden lg:block;
-}
-  swiper-container::part(button-prev) {
-    @apply hidden lg:block;
-}
-  swiper-container::part(bullet-active) {
-  background-color: #0197BF;
-  width: 16px;
-  height: 16px;
-}
-swiper-container::part(bullet) {
-  background-color: #0197BF !important;;
-  width: 16px;
-  height: 16px;
-}
+	html{
+		scroll-snap-type: y mandatory;
+	}
+	.scroll-item{
+		scroll-snap-align: center;
+	}
+	.scroll-nav{
+		scroll-snap-align: center;
+	}
 </style>

@@ -6,6 +6,7 @@ import instagramICO from "../assets/footer/instagramICO.svg";
 import whatsappICO from "../assets/footer/whatsappICO.svg";
 
 import logoFooter from "../assets/footer/LOGO-COMPLETO-PODODINAMIC-2.png";
+import logoIndri from "../assets/footer/LOGO NEGRO.png";
 
 
 const scrollfot = { scrollSnapAlign: "center" };
@@ -56,7 +57,11 @@ export default function App() {
                     <img src={whatsappICO.src} alt="whatsapp"/>
                 </a>
             </div>
-            <p className="text-xs text-center">© 2023 Manufacturas San Isidro S.A.C. Todos los derechos reservados</p>
+            <div className="text-xs text-center flex w-full flex-wrap justify-center ">
+                <p>© 2023 Web desarrollado por </p>
+                <a href="https://indri.pe/"><img src={logoIndri.src} alt="logo-indri" className="w-10 ml-1" /></a>
+                <span>Todos los derechos reservados PODODINAMIC</span>
+            </div>
         </div>
 
 
