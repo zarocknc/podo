@@ -3,16 +3,16 @@ import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
 import EquipoEspecial2 from '@components/EquipoEspecial2.astro';
 
-import img1 from '../../assets/estudioBP/image02.png';
+import img1 from '../../assets/estudioBP/estudiodelamarcha02.png';
 import img2 from '../../assets/estudioBP/image02b.png';
 import cruzA from '../../assets/inicio/icon01.png';
 
 ---
 <Layout title="Pododinamic | Estudio Biomecánico de la Pisada">
       <div class="px-2">
-        <section class="scroll-nav w-full h-full my-4">
+        <section class="scroll-nav w-full lg:h-[90vh] lg:mt-6 lg:mb-8 my-4">
           <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
+            <div class="h-[40%] lg:h-full lg:w-[35%] w-[80%] flex justify-center items-center">
               <img src={img1.src} alt="" class="lg:h-[90%] w-full">
             </div>
             <div class="text-center lg:w-[35%] w-full flex flex-col justify-center items-center p-2">
@@ -20,25 +20,26 @@ import cruzA from '../../assets/inicio/icon01.png';
               <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">biomecánico</h2>
               <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl ">de la pisada</h3>
               <div class="w-[90%] lg:w-[75%] flex flex-col justify-center mt-3">
-                <span class="text-center font-bold">FOOSCAN plate 1.5 m RSscan, software V9 Clinical</span>
-                <p class="text-[#000]">Esto incluirá observar su modo de andar (la forma en que camina) y crear un mapeo digital de fuerza/presión que les indique lo que sucede dentro de su pie mientras camina.</p>
+                <p class="text-[#000]">Medir al paciente de forma dinámica con footscan le permite identificar riesgos potenciales que no pueden detectar solo con el ojo o incluso con una cámara combinada con una cinta de correr. La identificación de presiones máximas, zonas de riesgo y la línea 'Centro de presión' le brinda información valiosa en la evaluación biomecánica y el diseño ortopédico adecuado. Además, es una herramienta intuitiva que le ayuda a educar a su paciente sobre la biomecánica de su pie.</p>
               </div>
             </div>
           </div>
         </section>
         
-        <section class="scroll-nav w-full h-screen my-4">
+        <!----
+          <section class="scroll-nav w-full h-screen my-4">
           <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
             <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
               <img src={img2.src} alt="" class="lg:h-[90%] w-full">
             </div>
-            <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
+            <div class="text-center lg:w-[35%] w-full flex flex-col justify-center items-center">
               <div class="w-[90%] lg:w-[65%] flex justify-center lg:text-center p-2">
                 <p class="text-[#000]">El estudio biomecánico de la marcha permite realizar un análisis del pie tanto en posición estática, sin que la persona se mueva, como dinámica, observando la forma de caminar del paciente y analizando toda una serie de datos que proporciona el estudio, así como la relación de los pies al caminar con otras estructuras, como la rodilla, la cadera y la columna vertebral.</p>
               </div>
             </div>
           </div>
         </section>
+        -->
         </div>
       <EquipoEspecial2 />
       <Consulta />

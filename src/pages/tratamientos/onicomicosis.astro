@@ -1,20 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
-import EquipoEsp from '../../components/EquipoEspecial.astro';
 
-import img1 from '@assets/tratamientos/image05.png';
-import img2 from '@assets/tratamientos/image05b.png';
+import img1 from '../../assets/tratamientos/onicomicosis01.png';
+import img2 from '../../assets/tratamientos/image05b.png';
+import equipo from '../../assets/subFooter/profesional01.png';
+import cruzB from '../../assets/banner/cruzB.png';
 ---
 <Layout title="Tratamiento | Onicomicosis"> 
       <div class="px-2">
         <section class="scroll-nav w-full h-full my-4">
           <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
-              <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+            <div class="h-[40%] lg:h-full lg:w-[35%] w-[80%] flex justify-center items-center">
+              <img src={img1.src} alt="" class="lg:h-full w-full">
             </div>
             <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
-                <h6 class="uppercase text-[#8FC751] leading-3">tratamiento</h6>
                 <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">onicomicosis</h2>
                 <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">hongos en las uñas</h3>
                 <div class="w-[90%] lg:w-[75%] flex flex-col justify-center mt-3">
@@ -33,7 +33,7 @@ import img2 from '@assets/tratamientos/image05b.png';
               <div class="w-[90%] lg:w-[75%] flex flex-col justify-center text-left p-2">
                 <p class="text-[#8FC751]  text-sm lg:text-xl">Tratamiento LASER DMC</p>
                 <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
-                  <li>El láser terapéutico es de gran importancia en el tratamiento de patologías que afectan a los pies. Su acción terapéutica ayuda en el difícil proceso de cicatrización de úlceras e infecciones, sin romper la dermis, además de aliviar el dolor, puede utilizar el láser en diversas inflamaciones, en el pie diabético, en las fisuras del talón o en kas uñas encarnadas, y hongos en las uñas.</li>
+                  <li>El láser terapéutico es de gran importancia en el tratamiento de patologías que afectan a los pies. Su acción terapéutica ayuda en el difícil proceso de cicatrización de úlceras e infecciones, sin romper la dermis, además de aliviar el dolor, puede utilizar el láser en diversas inflamaciones, en el <span class="font-bold">pie diabético</span>, en las fisuras del talón o en las uñas encarnadas, y <span class="font-bold">hongos en las uñas</span>.</li>
                   <li>Su aplicación no es sentida por el paciente, ya que su potencia es baja, no calienta, no quema, no duele, no provoca picor ni provoca molestia alguna. Además, elimina el uso de medicamentos y brinda un tratamiento mucho más efectivo.</li>
                 </ul>
               </div>
@@ -41,7 +41,24 @@ import img2 from '@assets/tratamientos/image05b.png';
           </div>
         </section>
         </div>
-        <EquipoEsp />
+
+        <section>
+          <div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-4 px-2 py-4 lg:py-4 w-full relative">
+              <div class="text-[#fff] flex flex-col items-center lg:w-[40%] lg:gap-4 gap-2 w-full h-full">
+                  <div class="flex flex-col text-center w-full lg:text-4xl text-sm">
+                      <h2 class="font-bold">Equipo Profesional</h2>
+                      <h2>Especializado</h2>
+                  </div>
+                  <p class="lg:text-center w-[70%] lg:text-base text-[10px]">PODODINAMIC, está conformado por un equipo de especialistas en Podología, Biomecánica de la marcha, fisioterapia y técnicas ortopédicas de nivel europeo.</p>
+              </div>
+              <div class="w-[65%] lg:w-[25%]">
+                  <img src={equipo.src} alt="" class="w-full">
+              </div>
+              <img src={cruzB.src} alt="" class="lg:w-10 w-4 absolute lg:top-8 lg:left-72  left-6 top-4">
+              <img src={cruzB.src} alt="" class="lg:w-16 w-8 absolute lg:bottom-8 lg:right-40 bottom-2 right-36">
+          </div>
+      </section>
+
       <Consulta />
 </Layout>
 <style>

@@ -31,7 +31,7 @@ export default function App() {
                 <ul >
                     <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
                     <li><a href="/tratamientos/uEncarnada">Uña encarnada</a></li>
-                    <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
+                    <li><a href="/tratamientos/onicomicosis">Onicomicosis</a></li>
                 </ul>
         </AccordionItem>
         <AccordionItem key="3" aria-label="plantillas" title="Plantillas">
@@ -67,9 +67,9 @@ export default function App() {
 
         {/* [/*--------------------------- FOOTER PARA LAPTOPS, ESCRITORIO--------------------------*/}
         <div className="hidden lg:flex flex-col bg-[#fff] ">
-            <div className="lg:flex w-full gap-32 justify-center p-4">
+            <div className="lg:flex w-full gap-32 justify-center p-2">
                 <div className="flex  flex-col">
-                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
+                    <h3 className="uppercase font-bold text-[#2fa1c7] flex">especialidades </h3>
                     <ul>
                         <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
                         <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
@@ -80,7 +80,7 @@ export default function App() {
                 </div>
                 <div>
                     <div className="flex justify-center lg:flex-col">
-                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">tratamientos</h3>
+                        <h3 className="uppercase font-bold text-[#2fa1c7] flex">tratamientos</h3>
                         <ul>
                         <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
                         <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
@@ -88,7 +88,7 @@ export default function App() {
                         </ul>
                     </div>
                     <div className="flex justify-center lg:flex-col">
-                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
+                        <h3 className="uppercase font-bold text-[#2fa1c7] lg:mt-3 mt-3 flex">plantillas personalizadas</h3>
                         <ul>
                             <li><a href="/plantillas/tiposPlantillas" className="hover:text-[#0197bf]">Tipos de plantillas</a></li>
                             <li><a href="/plantillas/estudioBP" className="hover:text-[#0197bf]">Estudio biomecánico de la pisada</a></li>
@@ -118,7 +118,7 @@ export default function App() {
                     </a>
                 </div>
             </div>
-            <div className="text-sm text-center flex w-full flex-wrap justify-center p-4 items-center ">
+            <div className="text-sm text-center flex w-full flex-wrap justify-center py-1 items-center ">
                 <p>© 2023 Web desarrollado por </p>
                 <a href="https://indri.pe/" target="_blank"><img src={logoIndri.src} alt="logo-indri" className="w-12 mx-1" /></a>
                 <span>.Todos los derechos reservados PODODINAMIC</span>
