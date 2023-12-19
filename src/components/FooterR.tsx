@@ -18,13 +18,11 @@ export default function App() {
         {/* [/* FOOTER PARA MOVILES*/}
             <div className="block lg:hidden bg-[#fff] p-4 text-xs">
             <Accordion>
-        <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
-                <ul className="flex flex-col justify-center">
-                    <li ><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
-                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
-                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
-                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
-                    <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
+        
+        <AccordionItem key="3" aria-label="plantillas" title="Plantillas">
+                <ul>
+                    <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
+                    <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
                 </ul>
         </AccordionItem>
         <AccordionItem key="2" aria-label="tratamientos" title="Tratamientos" >
@@ -34,14 +32,18 @@ export default function App() {
                     <li><a href="/tratamientos/onicomicosis">Onicomicosis</a></li>
                 </ul>
         </AccordionItem>
-        <AccordionItem key="3" aria-label="plantillas" title="Plantillas">
-                <ul>
-                    <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
-                    <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
+        <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
+                <ul className="flex flex-col justify-center">
+                    <li ><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
+                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
+                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
+                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
+                    <li><a href="/especialidades/fisioterapia">Fisioterapia y rehabilitación</a></li>
                 </ul>
         </AccordionItem>
         <AccordionItem key="4" aria-label="nosotros" title="Nosotros">
-                <ul className="">
+                <ul>
+                    <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                     <li><a href="mailto:informes@pododinamic.pe">informes@pododinamic.pe</a></li>
                 </ul>
         </AccordionItem>
@@ -75,7 +77,7 @@ export default function App() {
                         <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
                         <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
                         <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
-                        <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
+                        <li><a href="/especialidades/fisioterapia" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
                     </ul>
                 </div>
                 <div>
@@ -98,6 +100,7 @@ export default function App() {
                 <div className="flex justify-center flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
                     <ul>
+                        <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                         <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
                     </ul>
                     <div className="flex justify-center gap-1">
