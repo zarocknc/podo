@@ -49,13 +49,13 @@ export default function App() {
         </AccordionItem>
         </Accordion>
             <div className="flex justify-center gap-1 mb-2">
-                <a href="">
+                <a href="https://www.facebook.com/Pododinamic" target="_blank">
                     <img src={facebookICO.src} alt="facebook"/>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/pododinamic/" target="_blank">
                     <img src={instagramICO.src} alt="instagram"/>
                 </a>    
-                <a href="">
+                <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank">
                     <img src={whatsappICO.src} alt="whatsapp"/>
                 </a>
             </div>
