@@ -60,9 +60,8 @@ export default function App() {
                 </a>
             </div>
             <div className="text-xs text-center flex w-full flex-wrap justify-center ">
-                <p>© 2023 Web desarrollado por </p>
-                <a href="https://indri.pe/"><img src={logoIndri.src} alt="logo-indri" className="w-10 ml-1" /></a>
-                <span>Todos los derechos reservados PODODINAMIC</span>
+                <p>© 2023 Todos los derechos reservados PODODINAMIC.</p>
+                <span className="flex">Web desarrollado por <a href="https://indri.pe/"><img src={logoIndri.src} alt="logo-indri" className="w-10 ml-1" /></a></span>
             </div>
         </div>
 
@@ -121,10 +120,10 @@ export default function App() {
                     </a>
                 </div>
             </div>
-            <div className="text-sm text-center flex w-full flex-wrap justify-center py-1 items-center ">
-                <p>© 2023 Web desarrollado por </p>
+            <div className="text-sm text-center flex w-full flex-wrap justify-center py-1  ">
+                <p>© 2023 Todos los derechos reservados PODODINAMIC. Web desarrollado por </p>
                 <a href="https://indri.pe/" target="_blank"><img src={logoIndri.src} alt="logo-indri" className="w-12 mx-1" /></a>
-                <span>.Todos los derechos reservados PODODINAMIC</span>
+                
             </div>
         </div>
     </footer>
