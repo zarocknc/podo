@@ -7,7 +7,33 @@ import trama from '../assets/sliderhome/slider06.png';
 ---
 
 <main class="lg:mb-4 mb-4 lg:flex flex-col w-full justify-center">
+  <swiper-container navigation="true" loop="true"  pagination="true" class="lg:w-full rounded-lg">
+    <swiper-slide>
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="lg:w-[70%] lg:h-auto aspect-video flex justify-center items-center">
+          <img src={img2.src} alt="" class="w-auto h-full object-cover">
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="lg:w-[70%] lg:h-auto aspect-video flex justify-center items-center relative ">
+          <video class="top-0 left-0 w-auto h-full lg:object-cover" autoplay loop muted >
+              <source src={videoFondo} type="video/mp4">
+          </video>
+          <div class="absolute z-30 w-auto h-full justify-center flex">
+            <img src={trama.src} alt="" class="opacity-25 w-auto h-full">
+        </div>
+        <div class="absolute z-50 bottom-2/4">
+            <h2 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 lg:text-5xl text-2xl text-white font-bold">¡Te acompañamos en cada paso!</h2>
+        </div>
+        </div>
+      </div>
+    </swiper-slide>
+    </swiper-container>
+  
 
+<!----listo
   <div class="text-center  w-full  right-0  flex lg:justify-center">
     <div class="lg:w-[80%] flex-wrap flex justify-center items-center">
       <h2 class="uppercase text-[#8FC751] lg:text-4xl mr-2">especialistas en</h2>
@@ -25,7 +51,6 @@ import trama from '../assets/sliderhome/slider06.png';
         </div>
       </div>
     </swiper-slide>
-    <!---
     <swiper-slide>
       <div class="flex justify-center items-center w-full h-full">
         <div class="lg:w-[70%] lg:h-auto aspect-video flex justify-center items-center relative ">
@@ -40,39 +65,9 @@ import trama from '../assets/sliderhome/slider06.png';
         </div>
         </div>
       </div>
-    </swiper-slide> -->
-    </swiper-container>
-  
-
-  
-
-
-<!----listo
-
-<swiper-container navigation="true" loop="true"  pagination="true" class="lg:w-full rounded-lg">
-    <swiper-slide>
-      <div class="flex justify-center items-center w-full h-full">
-        <div class="lg:w-[80%] lg:h-auto aspect-video flex justify-center items-center">
-          <img src={img2.src} alt="" class="w-auto h-full object-cover">
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="flex justify-center items-center w-full h-full">
-        <div class="lg:w-[80%] lg:h-auto aspect-video flex justify-center items-center relative ">
-          <video class="top-0 left-0 w-auto h-full lg:object-cover" autoplay loop muted >
-              <source src={videoFondo} type="video/mp4">
-          </video>
-          <div class="absolute z-30 w-auto h-full justify-center flex">
-            <img src={trama.src} alt="" class="opacity-25 w-auto h-full">
-        </div>
-        <div class="absolute z-50 bottom-2/4">
-            <h2 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 lg:text-5xl text-2xl text-white font-bold">¡Te acompañamos en cada paso!</h2>
-        </div>
-        </div>
-      </div>
     </swiper-slide>
     </swiper-container>
+
 -->
 </main>
   
