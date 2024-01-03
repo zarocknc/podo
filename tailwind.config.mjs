@@ -42,7 +42,7 @@ export default {
 				}
 			  },
 			  animation: {
-				typing: "typing 4s  infinite alternate, blink .7s infinite"
+				typing: "typing 6s forwards  infinite alternate, blink .8s infinite"
 			  }
 		},
 	},
