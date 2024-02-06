@@ -1,51 +1,48 @@
 ---
-import img1 from '../assets/inicio/slider02.png';
-import cruz from '../assets/inicio/icon01.png';
+import img2 from '../assets/sliderhome/slider05.png';
+import videoFondo from "../video/Estudiobiomecanico.mp4";
+import trama from '../assets/sliderhome/slider06.png';
 ---
 
-<div class="relative z-40 lg:mb-4 mb-4">
-    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" pagination="true" class="estiobp  rounded-lg z-20">
-      <swiper-slide class="relative">
-        <div class="relative flex justify-center gap-2 items-center h-full">
-          <div class="">
-            <img src={img1.src} alt="" class="w-full">
-          </div>
-          <img src={cruz.src} alt="" class="absolute lg:top-14 lg:w-10 w-5 top-3 right-40 lg:right-96">
-          <img src={cruz.src} alt="" class="absolute lg:bottom-14 lg:w-10 w-5 bottom-1 lg:right-40 right-2">
-          <div class="absolute text-center w-[40%] flex flex-col lg:justify-center items-center right-0">
-            <h2 class="uppercase text-[#8FC751] lg:text-4xl">especialistas en</h2>
-            <h2 class="uppercase text-[#1579BD] lg:text-5xl font-bold">podología,</h2>
-            <h2 class="uppercase text-[#1579BD] lg:text-5xl font-bold">estudio</h2>
-            <h2 class="uppercase text-[#1579BD] lg:text-5xl font-bold">biomecánico</h2>
-            <h2 class="uppercase text-[#1579BD] lg:text-5xl font-bold">de la marcha</h2>
-            <h2 class="uppercase text-[#1579BD] lg:text-5xl font-bold">y fisioterapia</h2>
-          </div>
-        </div>
-        
-      </swiper-slide>
-      <!---
+<main class="lg:mb-4 mb-4 lg:flex flex-col w-full justify-center">
+  <swiper-container navigation="true" loop="true"  pagination="true" class="lg:w-full rounded-lg">
     <swiper-slide>
-        <div class="flex justify-center gap-2 items-center w-full h-full">
-          <div class="h-full w-[45%] flex justify-center items-center">
-            
-          </div>
-          <div class="text-center w-[45%] flex flex-col justify-center items-center">
-            <div class="w-[90%] flex flex-col justify-center text-left">
-                <span class="font-bold text-[#000]">"Cuándo llevar a un niño al podólogo?</span>
-              <ul class="mt-2">
-                <li>Lo importante es detectar cualquier problema a tiempo y que los padres acudan lo antes posible al podólogo.</li>
-                <li>La función de la podología pediátrica es detectar y corregir posibles marchas erráticas y posturas inadecuadas mediante el uso de plantillas infantiles personalizadas y calzado biomecánico que, a largo plazo, puedan derivar en lesiones en los pies, cadera, espalda, rodillas u otras partes del cuerpo. Por tanto, ¿cuándo deberías llevar a tu hijo al podólogo infantil? Ante síntomas como estos:</li>
-                <li>Has observado que tiene los pies planos, las piernas en cruz o en paréntesis; que mete las puntas de los pies hacia dentro, camina de puntillas; se cae con frecuencia o sufre lesiones o esguinces con más frecuencia de lo habitual; se queja de dolor en los pies, tobillos, rodilla, caderas o espalda; desgasta el calzado de forma irregular, etc.</li>
-                <li>La mayoría de estas patologías se pueden corregir con el uso de plantillas infantiles personalizadas y calzado biomecánico.</li>
-              </ul>
-            </div>
-          </div>
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="lg:w-[70%] lg:h-auto aspect-video flex justify-center items-center">
+          <img src={img2.src} alt="" class="w-auto h-full object-cover">
         </div>
-    </swiper-slide> -->
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="lg:w-[70%] lg:h-auto aspect-video flex justify-center items-center relative ">
+          <video class="top-0 left-0 w-auto h-full lg:object-cover" autoplay loop muted >
+              <source src={videoFondo} type="video/mp4">
+          </video>
+          <div class="absolute z-30 w-auto h-full justify-center flex">
+            <img src={trama.src} alt="" class="opacity-25 w-auto h-full">
+        </div>
+        <div class="absolute z-50 bottom-2/4 lg:w-[90%]  flex justify-center text-center">
+            <h2 class="animate-typing overflow-hidden whitespace-nowrap  pr-3 lg:text-4xl text-lg text-white font-bold">Te acompañamos, mejorando tu pisada y tu vida</h2>
+        </div>
+        </div>
+      </div>
+    </swiper-slide>
     </swiper-container>
-  </div>
+  
+</main>
   
   <script>
     import { register } from "swiper/element/bundle";
     register();
   </script>
+  <style>
+
+
+    swiper-container::part(button-next) {
+  @apply hidden lg:block;
+}
+  swiper-container::part(button-prev) {
+    @apply hidden lg:block;
+}
+  </style>

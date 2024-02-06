@@ -18,69 +18,70 @@ export default function App() {
         {/* [/* FOOTER PARA MOVILES*/}
             <div className="block lg:hidden bg-[#fff] p-4 text-xs">
             <Accordion>
-        <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
-                <ul className="flex flex-col justify-center">
-                    <li ><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
-                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
-                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
-                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
-                    <li><a href="/especialidades/fisioRehabi">Fisioterapia y rehabilitación</a></li>
-                </ul>
-        </AccordionItem>
-        <AccordionItem key="2" aria-label="tratamientos" title="Tratamientos" >
-                <ul >
-                    <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
-                    <li><a href="/tratamientos/uEncarnada">Uña encarnada</a></li>
-                    <li><a href="/tratamientos/onicomicosis">Quiropodia</a></li>
-                </ul>
-        </AccordionItem>
+        
         <AccordionItem key="3" aria-label="plantillas" title="Plantillas">
                 <ul>
                     <li><a href="/plantillas/tiposPlantillas">Tipos de plantillas</a></li>
                     <li><a href="/plantillas/estudioBP">Estudio biomecánico de la pisada</a></li>
                 </ul>
         </AccordionItem>
+        <AccordionItem key="2" aria-label="tratamientos" title="Tratamientos" >
+                <ul >
+                    <li><a href="/tratamientos/quiropodia">Quiropodia</a></li>
+                    <li><a href="/tratamientos/uEncarnada">Uña encarnada</a></li>
+                    <li><a href="/tratamientos/onicomicosis">Onicomicosis</a></li>
+                </ul>
+        </AccordionItem>
+        <AccordionItem key="1" aria-label="especialidades" title="Especialidades">
+                <ul className="flex flex-col justify-center">
+                    <li ><a href="/especialidades/vidadiaria">Podología para la Vida Diaria</a></li>
+                    <li><a href="/especialidades/pInfantil">Podología Infantil</a></li>
+                    <li><a href="/especialidades/deportiva">Podología Deportiva</a></li>
+                    <li><a href="/especialidades/personasMayores">Podología Personas Mayores</a></li>
+                    <li><a href="/especialidades/fisioterapia">Fisioterapia y rehabilitación</a></li>
+                </ul>
+        </AccordionItem>
         <AccordionItem key="4" aria-label="nosotros" title="Nosotros">
-                <ul className="">
+                <ul>
+                    <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                     <li><a href="mailto:informes@pododinamic.pe">informes@pododinamic.pe</a></li>
                 </ul>
         </AccordionItem>
         </Accordion>
             <div className="flex justify-center gap-1 mb-2">
-                <a href="">
+                <a href="https://www.facebook.com/Pododinamic" target="_blank">
                     <img src={facebookICO.src} alt="facebook"/>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/pododinamic/" target="_blank">
                     <img src={instagramICO.src} alt="instagram"/>
                 </a>    
-                <a href="">
+                <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank">
                     <img src={whatsappICO.src} alt="whatsapp"/>
                 </a>
             </div>
             <div className="text-xs text-center flex w-full flex-wrap justify-center ">
-                <p>© 2023 Web desarrollado por </p>
-                <a href="https://indri.pe/"><img src={logoIndri.src} alt="logo-indri" className="w-10 ml-1" /></a>
-                <span>Todos los derechos reservados PODODINAMIC</span>
+                <p>© 2023 Todos los derechos reservados PODODINAMIC.</p>
+                <span className="flex">Web desarrollado por <a href="https://indri.pe/"><img src={logoIndri.src} alt="logo-indri" className="w-10 ml-1" /></a></span>
             </div>
         </div>
 
 
         {/* [/*--------------------------- FOOTER PARA LAPTOPS, ESCRITORIO--------------------------*/}
         <div className="hidden lg:flex flex-col bg-[#fff] ">
-            <div className="lg:flex w-full gap-32 justify-center p-4">
+            <div className="lg:flex w-full gap-32 justify-center p-2">
                 <div className="flex  flex-col">
-                    <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">especialidades </h3>
+                    <h3 className="uppercase font-bold text-[#2fa1c7] flex">especialidades </h3>
                     <ul>
                         <li><a href="/especialidades/vidadiaria" className="hover:text-[#0197bf]">Podología para la Vida Diaria</a></li>
                         <li><a href="/especialidades/pInfantil" className="hover:text-[#0197bf]">Podología Infantil</a></li>
                         <li><a href="/especialidades/deportiva" className="hover:text-[#0197bf]">Podología Deportiva</a></li>
                         <li><a href="/especialidades/personasMayores" className="hover:text-[#0197bf]">Podología Personas Mayores</a></li>
-                        <li><a href="/especialidades/fisioRehabi" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
+                        <li><a href="/especialidades/fisioterapia" className="hover:text-[#0197bf]">Fisioterapia y rehabilitación</a></li>
                     </ul>
                 </div>
                 <div>
                     <div className="flex justify-center lg:flex-col">
-                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex">tratamientos</h3>
+                        <h3 className="uppercase font-bold text-[#2fa1c7] flex">tratamientos</h3>
                         <ul>
                         <li><a href="/tratamientos/quiropodia" className="hover:text-[#0197bf]">Quiropodia</a></li>
                         <li><a href="/tratamientos/uEncarnada" className="hover:text-[#0197bf]">Uña encarnada</a></li>
@@ -88,7 +89,7 @@ export default function App() {
                         </ul>
                     </div>
                     <div className="flex justify-center lg:flex-col">
-                        <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 lg:mt-4 mt-3 flex">plantillas personalizadas</h3>
+                        <h3 className="uppercase font-bold text-[#2fa1c7] lg:mt-3 mt-3 flex">plantillas personalizadas</h3>
                         <ul>
                             <li><a href="/plantillas/tiposPlantillas" className="hover:text-[#0197bf]">Tipos de plantillas</a></li>
                             <li><a href="/plantillas/estudioBP" className="hover:text-[#0197bf]">Estudio biomecánico de la pisada</a></li>
@@ -98,6 +99,7 @@ export default function App() {
                 <div className="flex justify-center flex-col">
                     <h3 className="uppercase font-bold text-[#2fa1c7] mb-1 flex justify-center">nosotros</h3>
                     <ul>
+                        <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                         <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
                     </ul>
                     <div className="flex justify-center gap-1">
@@ -118,10 +120,10 @@ export default function App() {
                     </a>
                 </div>
             </div>
-            <div className="text-sm text-center flex w-full flex-wrap justify-center p-4 items-center ">
-                <p>© 2023 Web desarrollado por </p>
+            <div className="text-sm text-center flex w-full flex-wrap justify-center py-1  ">
+                <p>© 2023 Todos los derechos reservados PODODINAMIC. Web desarrollado por </p>
                 <a href="https://indri.pe/" target="_blank"><img src={logoIndri.src} alt="logo-indri" className="w-12 mx-1" /></a>
-                <span>.Todos los derechos reservados PODODINAMIC</span>
+                
             </div>
         </div>
     </footer>

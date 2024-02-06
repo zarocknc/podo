@@ -1,17 +1,75 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Consulta from '@components/Consulta.astro';
+import EquipoEspecial4 from '@components/EquipoEspecial4.astro';
+
+import img1 from '../../assets/cursos/img1.png';
+import img2 from '../../assets/cursos/img2.png';
+import img3 from '../../assets/cursos/img3.png';
+import cruzA from '../../assets/inicio/icon01.png';
 ---
 
 <Layout title="Pododinamic | Cursos"  >
-	<main class="h-full">
-        <h2>PAGINA CURSOS</h2>
-		<div>
-			<div class="w-full" >
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex facilis voluptatum ratione sint, ad consequatur iste cumque amet nemo? Ipsum voluptatum neque aspernatur necessitatibus ipsa quas quo, libero tempora veritatis!
-				</p>
+	<section class="py-6 lg:py-4 relative">
+		<div class="flex lg:flex-row flex-col-reverse w-full h-full  lg:justify-evenly items-center px-4 gap-6 lg:gap-0">
+			<div class="lg:w-[35%] w-[80%]">
+				<img src={img1.src} alt="" class="w-full">
+			</div>
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:top-8 lg:right-[38rem]">
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:bottom-8 lg:right-[8rem]">
+			<div class="flex flex-col text-center w-[80%] lg:w-[40%]">
+				<h6 class="uppercase text-[#8FC751]">Teórico / Práctico</h6>
+				<h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">cursos</h2>
+				<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">formativos</h3>
+				<div class="flex justify-center items-center w-full mt-2">
+					<p class="lg:w-[58%] lg:leading-6 lg:text-[17px]"><span class="font-bold">PODODINAMIC</span>,  se propuso desde sus comienzos,  como uno de sus objetivos principales,  la organización de Cursos de Formación continuada para sus clientes y colaboradores. Los cursos "Teórico-prácticos", en una continua mejora de sus instalaciones. <span class="font-bold">PODODINAMIC</span> dispone de un aula y maquinaria suficiente para realizar cursos prácticos de calidad en este año 2024 Y completará sus instalaciones con un gabinete de investigación biomecánica. Con plataformas de fuerza y presión, sistema TAD 3d, cinta de marcha , cámaras de video etc.</p>
+				</div>
 			</div>
 		</div>
-
-	</main>
+	</section>
+	<section class="py-6 lg:py-4 relative lg:h-screen">
+		<div class="flex lg:flex-row flex-col-reverse w-full h-full  lg:justify-evenly items-center px-4 gap-6 lg:gap-0">
+			<div class="lg:w-[35%] w-[80%]">
+				<img src={img3.src} alt="" class="w-full">
+			</div>
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:top-24 lg:right-[38rem]">
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:bottom-24 lg:right-[8rem]">
+			<div class="flex flex-col text-center w-[80%] lg:w-[40%] gap-8">
+				<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">curso i</h3>
+				<div class="flex justify-center flex-col gap-4 items-center w-full mt-2">
+					<span>BIOMECANICA PODOLOGICA</span>
+					<span>TOMA DE MOLDES PERSONALIZADOS</span>
+					<span>TECNOLOGIA DE MATERIALES</span>
+					<div class="flex flex-col">
+						<span>ELABORACIÓN DE SOPORTES</span>
+						<span>PLANTARES ERGONOMICOS</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-12 lg:py-4 relative lg:h-screen">
+		<div class="flex lg:flex-row flex-col-reverse w-full h-full  lg:justify-evenly items-center px-4 gap-6 lg:gap-0">
+			<div class="lg:w-[35%] w-[80%]">
+				<img src={img2.src} alt="" class="w-full">
+			</div>
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:top-24 lg:right-[38rem]">
+			<img src={cruzA.src} alt="" class="hidden lg:block w-8 absolute lg:bottom-24 lg:right-[8rem]">
+			<div class="flex flex-col text-center w-[80%] lg:w-[40%] gap-8">
+				<h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">curso ii</h3>
+				<div class="flex justify-center flex-col gap-4 items-center w-full mt-2">
+					<span>BIOMECANICA FISIOTERAPEUTICA</span>
+					<span>BIOMECANICA DEPORTIVA</span>
+					<span>BIOMECANICA POSTUROLOGIA</span>
+					<div class="flex flex-col">
+						<span class="uppercase">tratamiento y rehabilitación</span>
+						<span class="uppercase">de lesiones</span>
+					</div>
+				</div>
+				<span class="uppercase">atm</span>
+			</div>
+		</div>
+	</section>
+	<EquipoEspecial4 />
+	<Consulta />
 </Layout>

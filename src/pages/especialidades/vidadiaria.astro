@@ -3,23 +3,23 @@ import Layout from '../../layouts/Layout.astro';
 import Consulta from '../../components/Consulta.astro';
 import EquipoEsp from '../../components/EquipoEspecial.astro';
 
-import img1 from '@assets/especialidades/image06.png';
+import img1 from '@assets/especialidades/paralavidadiaria01.png';
 import img2 from '@assets/especialidades/image06b.png';
 ---
 <Layout title="Podología | Vida Diaria">
       <div class="px-2">
-        <section class="scroll-nav w-full h-[90vh] my-4">
+        <section class="scroll-nav w-full my-4">
           <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-center gap-12 items-center w-full h-[80%]">
-            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
-              <img src={img1.src} alt="" class="lg:h-[90%] w-full">
+            <div class="lg:w-[35%] w-[80%]">
+              <img src={img1.src} alt="" class="w-full">
             </div>
             <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center p-2">
-              <h6 class="uppercase text-[#8FC751] leading-3">especialidad</h6>
-              <h2 class="uppercase text-[#1579BD] leading-6 lg:text-6xl text-2xl font-bold">podología</h2>
-              <h3 class="uppercase text-[#55BABB] leading-6 lg:text-4xl text-xl">para la vida diaria</h3>
+              <h2 class="uppercase text-[#1579BD] lg:text-6xl text-2xl font-bold">podología</h2>
+              <h3 class="uppercase text-[#55BABB] lg:text-4xl text-xl">para la vida diaria</h3>
               <div class="w-[95%] lg:w-[75%] flex flex-col justify-center mt-3">
-                <span class="font-bold text-[#000]">No se olvide de sus pies</span>
-              <p class="text-[#000] text-sm lg:text-base">¿Qué puede reemplazar a sus pies, cuando éstos están en buenas condiciones? Sólamente andando a pie puede uno gozar plenamente de la Tierra. La belleza de las majestuosas colinas, la fragancia del bosque deleitoso y el canto de los pájaros se disfrutan más cuando uno camina.</p>
+                <span class="font-bold text-[#000] text-lg">Observe siempre sus pies</span>
+              <span class="text-xl">¿Qué puede reemplazar a sus pies, cuando éstos están en buenas condiciones? </span>
+              <p class="text-[#000] text-sm lg:leading-6 lg:text-[17px]">Sólamente andando a pie puede uno gozar plenamente de la Tierra. La belleza de las majestuosas colinas, la fragancia del bosque deleitoso y el canto de los pájaros se disfrutan más cuando uno camina.</p>
             </div>
             </div>
           </div>
@@ -27,16 +27,15 @@ import img2 from '@assets/especialidades/image06b.png';
         
         <section class="scroll-nav w-full h-screen my-4">
           <div class="flex lg:flex-row flex-col-reverse lg:justify-center justify-evenly items-center w-full h-full">
-            <div class="h-[40%] lg:h-full lg:w-[45%] w-[80%] flex justify-center items-center">
-              <img src={img2.src} alt="" class="lg:h-[90%] w-full">
+            <div class="lg:w-[35%] w-[80%]">
+              <img src={img2.src} alt="" class="w-full">
             </div>
             <div class="text-center lg:w-[45%] w-full flex flex-col justify-center items-center">
               <div class="w-[95%] lg:w-[75%] flex flex-col justify-center text-left p-2">
-                <span class="text-[#8FC751]  text-sm lg:text-xl">Cuidado de los pies y calzados adecuados</span>
-              <ul class="lg:mt-4 mt-2 list-disc text-xs lg:text-base">
+                <span class="text-[#8FC751]  text-sm lg:text-xl font-bold">Cuidado de los pies y calzados adecuados</span>
+              <ul class="lg:mt-4 mt-2 list-disc text-xs lg:leading-6 lg:text-[17px]">
                 <li>Se ha dicho a menudo: "Cuando los pies duelen, todo el cuerpo duele," y esto puede ser cierto. Sus pies pueden hacer que usted se sienta nervioso e irritado.</li>
-                <li>Pueden producirle dolores de cabeza, hacer que le duelan las piernas y espalda, provocarle náuseas, estropear su apetitoy, por lo general, hacer que todo su cuerpo se sienta indispuesto. Ciertamente, éstas son buenas razones para cuidarlos bien.</li>
-                <li>Probablemente lo primero que se debe tomar en cuenta al considerar el cuidado de sus pies es la selcción de zapatos. El Dr. Simon Wikler, en su libro Take Off Your Shoes and Walk, dice: "Creo ahora sin la menor duda de que la principal causa de los problemas de los pies yace en la clase de zapatos que usamos."</li>
+                <li>Pueden producirle dolores de cabeza, hacer que le duelan las piernas y espalda, provocarle náuseas, estropear su apetito y por lo general hacer que todo su cuerpo se sienta indispuesto. Ciertamente, éstas son buenas razones para cuidarlos bien.</li>
                 <li>Por tal motivo, es recomendable visitar a especialistas podológicos por lo menos una vez al año para que puedan valorar la idoneidad de nuestra pisada, desde la infancia, cuando es más fácil corregir los problemas, hasta la vejez, ya que nuestros pies también envejecen y sufren deformaciones.</li>
               </ul>
             </div>
