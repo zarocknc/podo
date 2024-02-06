@@ -4,6 +4,7 @@ import facebookICO from "@assets/header/iconos/facebookICO.svg";
 import instagramICO from "@assets/header/iconos/instagramICO.svg";
 import menuICO from "../assets/header/iconos/hamburgerICO.svg";
 import cerrarICO from "@assets/header/iconos/x-12.svg";
+import mapMark from "@assets/header/iconos/map-marker-white.svg";
 import { Image } from "astro:assets";
 import logo1 from "@assets/header/LOGO-COMPLETO-PODODINAMIC-1.png";
 
@@ -17,12 +18,18 @@ import bannerSup from '../assets/header/bannersup.png';
 
         <div class="absolute top-0 w-full flex pt-2 px-2">
             <div class="flex justify-center lg:w-[96%] w-full text-[#fff] gap-2 items-center lg:text-base text-xs">
-                <h3>Central de citas :</h3>
+                <h3 class="hidden lg:block">Central de citas :</h3>
                 <div class="flex lg:flex-row lg:gap-2 gap-1">
                     <a href="https://wa.me/51983949899?text=Hola+tengo+una+consulta" target="_blank" class="w-4 lg:w-auto">
                         <img src={whatsappI.src} alt="">
                     </a>
                     <a href="tel:+51983949899">983 949 899</a>
+                </div>
+                <div class="ml-4 flex lg:flex-row lg:gap-2 gap-1">
+                    <a href="https://maps.google.com/?q=-12.0650135,-77.0426332" target="_blank" class="w-4 lg:w-auto">
+                          <img src={mapMark.src} alt="" class="w-6" >
+                    </a>
+                    <a href="https://maps.google.com/?q=-12.0650135,-77.0426332" class="inline-block">Av 28 de Julio #  350 <span class="hidden lg:inline">Jesus María , Lima, Perú</span></a>
                 </div>
         
             </div>

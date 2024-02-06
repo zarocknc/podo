@@ -4,6 +4,7 @@ import img1 from '../../assets/contacto/contactanos01.png';
 import equipo from '../../assets/subFooter/equipo02.png';
 import cruzB from '../../assets/banner/cruzB.png';
 import Consulta from '@components/Consulta.astro';
+import mapMark from '@assets/header/iconos/map-marker-white.svg';
 ---
 
 <Layout title="Pododinamic | Contacto"  >
@@ -34,6 +35,9 @@ import Consulta from '@components/Consulta.astro';
             </div>
         </div>
 	</main>
+    <div class="w-full h-20 flex bg-emerald-500 items-center justify-center">
+        <img src={mapMark.src} alt="" class="my-4 h-auto"> <a href="https://maps.google.com/?q=-12.0650135,-77.0426332" class="hover:text-slate-100 ml-4 text-xl lg:text-3xl text-white">Av 28 de Julio #  350 Jesus María , Lima, Perú</a>
+    </div>
     
     <section>
         <div class="bg-[#0098c3] flex lg:justify-center items-center lg:p-4 px-2 py-4 lg:py-4 w-full relative">

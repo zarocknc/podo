@@ -45,6 +45,7 @@ export default function App() {
                 <ul>
                     <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                     <li><a href="mailto:informes@pododinamic.pe">informes@pododinamic.pe</a></li>
+                    <li><a href="https://maps.google.com/?q=-12.0650135,-77.0426332">Av 28 de Julio #  350 Jesus María , Lima, Perú</a></li>
                 </ul>
         </AccordionItem>
         </Accordion>
@@ -101,6 +102,7 @@ export default function App() {
                     <ul>
                         <li><a href="/nosotros" className="hover:text-[#0197bf]">Sobre Nosotros</a></li>
                         <li><a href="mailto:informes@pododinamic.pe" className="hover:text-[#0197bf]">informes@pododinamic.pe</a></li>
+                        <li><a href="https://maps.google.com/?q=-12.0650135,-77.0426332" className="hover:text-[#0197bd]">Av 28 de Julio #  350 Jesus María , Lima, Perú</a></li>
                     </ul>
                     <div className="flex justify-center gap-1">
                         <a href="https://www.facebook.com/Pododinamic" target="_blank">
